@@ -43,7 +43,7 @@
     },
     "feature2": {
       "title": "Esnek Zamanlamalar",
-      "description": "Saatlik veya günlük iş seçin ve hayatınıza uymak"
+      "description": "Saatlik veya günlük iş seçin ve hayatınıza uydurun"
     },
     "feature3": {
       "title": "Doğrulanmış İşverenler",
@@ -53,24 +53,21 @@
       "title": "Kazançlarınızı Takip Edin",
       "description": "İş geçmişi ve toplam kazançlarınızı gerçek zamanlı olarak izleyin"
     },
-    "cta": "İşçi Olarak Katılın",
-    "dashboard": {
-      "title": "Paneliniz",
-      "totalEarnings": "Toplam Kazanç",
-      "completedJobs": "Tamamlanan İşler",
-      "recentJobs": "Son İşler",
-      "warehouseAssistant": "Depo Asistanı",
-      "away": "uzaklıktaki",
-      "perDay": "/gün"
-    }
+    "joinAsWorker": "İşçi Olarak Katılın",
+    "workerPanelTitle": "İşçi Paneliniz",
+    "totalEarnings": "Toplam Kazanç",
+    "completedJobs": "Tamamlanan İşler",
+    "recentJobs": "Son İşler",
+    "jobTitle": "Depo Asistanı",
+    "distance": "2.5 km uzaklıkta"
   },
   "forEmployers": {
     "badge": "İşverenler için",
-    "title": "Hızlı olarak iş alın. Kolay yönetin.",
-    "description": "Kısa vadeli işleri dakikalar içinde yayınlayın ve bölgenizdeki yetenekli işçilerle bağlantı kurun. İş alma sürecinizi basitleştirin.",
+    "title": "Hızlı işe alın. Kolay yönetin.",
+    "description": "Kısa vadeli işleri dakikalar içinde yayınlayın ve bölgenizdeki yetenekli işçilerle bağlantı kurun. İşe alma sürecinizi basitleştirin.",
     "feature1": {
       "title": "Anında İş Gönderimi",
-      "description": "İş ilanları oluşturun ve yayınlayın"
+      "description": "İş ilanları oluşturun ve dakikalar içinde yayınlayın"
     },
     "feature2": {
       "title": "Çoklu HR Hesapları",
@@ -81,23 +78,21 @@
       "description": "Çalışma saatlerini izleyin ve ödemeleri sorunsuz yönetin"
     },
     "feature4": {
-      "title": "Puanlayın ve Tekrar İşleyin",
-      "description": "Güvenilir işçi ağınıza puanlarla katılmak"
+      "title": "Puanlayın ve Tekrar İşe Alın",
+      "description": "Güvenilir işçi ağınızı puanlarla oluşturun"
     },
-    "cta": "İşveren Olarak Katılın",
-    "dashboard": {
-      "title": "İşveren Paneli",
-      "activeJobPosts": "Aktif İş Gönderileri",
-      "positionsFilled": "pozisyonlar dolduruldu",
-      "recentApplications": "Son Başvurular",
-      "candidate": "Aday",
-      "rating": "puan",
-      "view": "Görüntüle"
-    }
+    "joinAsEmployer": "İşveren Olarak Katılın",
+    "employerPanelTitle": "İşveren Paneli",
+    "activeJobPosts": "Aktif İş İlanları",
+    "jobPostsFilled": "9/12 pozisyon dolduruldu",
+    "recentApplications": "Son Başvurular",
+    "applicantTitle": "Aday #",
+    "applicantRating": "4.8 puan",
+    "view": "Görüntüle"
   },
-  "technology": {
+  "technologySection": {
     "title": "Akıllı teknoloji tarafından destekleniyor.",
-    "subtitle": "Güvenlik, güvenilirlik ve sorunsuz deneyim için en son teknolojilerle oluşturulmuştur",
+    "description": "Güvenlik, güvenilirlik ve sorunsuz deneyim için en son teknolojilerle oluşturulmuştur",
     "feature1": {
       "title": "API Tabanlı Kimlik Doğrulama",
       "description": "Tüm kullanıcılar için güvenli kimlik doğrulama"
@@ -116,25 +111,25 @@
     }
   },
   "testimonials": {
-    "title": "Binlerce tarafından güvenilir",
+    "title": "Binlerce kişi tarafından güveniliyor",
     "subtitle": "10,000+ kişi Mesai'yi güveniyor",
-    "testimonial1": {
+    "worker1": {
       "name": "Ahmet Yılmaz",
       "role": "Depo İşçisi",
-      "content": "Mesai, zamanlamalarımın uygun olduğu esnek iş bulmamı sağladı. 3 ayda ₺15,000 kazandım!"
+      "content": "Mesai, zamanlamalarıma uygun esnek iş bulmamı sağladı. 3 ayda ₺15,000 kazandım!"
     },
-    "testimonial2": {
+    "employer1": {
       "name": "Zeynep Kaya",
       "role": "HR Müdürü",
-      "content": "1 haftada 20 pozisyonu doldurdum. Platform çok kolay kullanılır ve işçiler güvenilirdir."
+      "content": "1 haftada 20 pozisyonu doldurdum. Platform çok kolay kullanılır ve işçiler güvenilir."
     },
-    "testimonial3": {
+    "worker2": {
       "name": "Mehmet Demir",
       "role": "Teslimat Şoförü",
       "content": "Lokasyon tabanlı iş eşleşmesi mükemmel. Sadece yakınımdaki işleri görüyorum ve hemen çalışmaya başlayabilirim."
     }
   },
-  "cta": {
+  "ctaSection": {
     "title": "Hemen başlamaya hazır mısınız?",
     "description": "Mesai'ye katılın ve bugün sonraki işinizi bulun. Zamanlamalarınızla uyumlu esnek fırsatlarla çalışın.",
     "joinAsWorker": "İşçi Olarak Katılın",

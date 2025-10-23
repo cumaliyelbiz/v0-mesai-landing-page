@@ -53,16 +53,13 @@
       "title": "Track Your Earnings",
       "description": "Monitor your job history and total earnings in real-time"
     },
-    "cta": "Join as Worker",
-    "dashboard": {
-      "title": "Your Dashboard",
-      "totalEarnings": "Total Earnings",
-      "completedJobs": "Completed Jobs",
-      "recentJobs": "Recent Jobs",
-      "warehouseAssistant": "Warehouse Assistant",
-      "away": "away",
-      "perDay": "/day"
-    }
+    "joinAsWorker": "Join as Worker",
+    "workerPanelTitle": "Your Dashboard",
+    "totalEarnings": "Total Earnings",
+    "completedJobs": "Completed Jobs",
+    "recentJobs": "Recent Jobs",
+    "jobTitle": "Warehouse Assistant",
+    "distance": "2.5 km away"
   },
   "forEmployers": {
     "badge": "For Employers",
@@ -84,20 +81,18 @@
       "title": "Rate and Rehire",
       "description": "Build your network of reliable workers with ratings"
     },
-    "cta": "Join as Employer",
-    "dashboard": {
-      "title": "Employer Dashboard",
-      "activeJobPosts": "Active Job Posts",
-      "positionsFilled": "positions filled",
-      "recentApplications": "Recent Applications",
-      "candidate": "Candidate",
-      "rating": "rating",
-      "view": "View"
-    }
+    "joinAsEmployer": "Join as Employer",
+    "employerPanelTitle": "Employer Dashboard",
+    "activeJobPosts": "Active Job Posts",
+    "jobPostsFilled": "9/12 positions filled",
+    "recentApplications": "Recent Applications",
+    "applicantTitle": "Candidate #",
+    "applicantRating": "4.8 rating",
+    "view": "View"
   },
-  "technology": {
+  "technologySection": {
     "title": "Powered by smart technology.",
-    "subtitle": "Built with the latest technologies for security, reliability, and seamless experience",
+    "description": "Built with the latest technologies for security, reliability, and seamless experience",
     "feature1": {
       "title": "API-Based Authentication",
       "description": "Secure authentication for all users"
@@ -118,23 +113,23 @@
   "testimonials": {
     "title": "Trusted by thousands",
     "subtitle": "10,000+ people trust Mesai",
-    "testimonial1": {
+    "worker1": {
       "name": "Ahmet Yılmaz",
       "role": "Warehouse Worker",
       "content": "Mesai helped me find flexible work that fits my schedule. I earned ₺15,000 in 3 months!"
     },
-    "testimonial2": {
+    "employer1": {
       "name": "Zeynep Kaya",
       "role": "HR Manager",
       "content": "Filled 20 positions in 1 week. The platform is so easy to use and the workers are reliable."
     },
-    "testimonial3": {
+    "worker2": {
       "name": "Mehmet Demir",
       "role": "Delivery Driver",
       "content": "The location-based job matching is perfect. I only see jobs near me and can start working immediately."
     }
   },
-  "cta": {
+  "ctaSection": {
     "title": "Ready to get started?",
     "description": "Join Mesai and find your next job today. Work with flexible opportunities that match your schedule.",
     "joinAsWorker": "Join as Worker",

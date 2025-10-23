@@ -11,7 +11,7 @@
     "title": "Yakınınızda iş bulun.",
     "titleHighlight": "Hızlı, esnek,",
     "titleEnd": "kendi şartlarınızda.",
-    "description": "Mesai, iş arayanları ve işverenleri gerçek zamanlı olarak buluşturur — lokasyon bazlı işleri keşfedin ve hemen çalışmaya başlayın.",
+    "description": "Mesai, mesai, iş arayanları ve işverenleri gerçek zamanlı olarak buluşturur — lokasyon bazlı işleri keşfedin ve hemen çalışmaya başlayın.",
     "startNow": "Hemen Başla",
     "watchDemo": "Demo İzle",
     "activeUsers": "10,000+ aktif kullanıcı",
@@ -153,5 +153,556 @@
     "cookies": "Çerez Politikası",
     "faq": "SSS",
     "rights": "Tüm hakları saklıdır."
+  },
+  "about": {
+    "badge": "Hakkımızda",
+    "title": "İş dünyasını",
+    "titleHighlight": "daha erişilebilir",
+    "titleEnd": "hale getiriyoruz",
+    "description": "Mesai, iş arayanlar ve işverenler arasındaki engelleri kaldırarak, herkesin esnek ve güvenli bir şekilde çalışmasını sağlayan bir platformdur.",
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "İş arayanlar ve işverenler arasında güvenli, hızlı ve şeffaf bir köprü kurmak. Teknoloji ile iş dünyasını demokratikleştirerek, herkesin kendi şartlarında çalışmasını sağlamak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Türkiye'nin en güvenilir ve kullanıcı dostu iş bulma platformu olmak. Milyonlarca insanın hayatına dokunarak, iş dünyasında yeni bir standart oluşturmak."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "subtitle": "Mesai'yi oluşturan temel prensipler",
+      "value1": {
+        "title": "İnsan Odaklı",
+        "description": "Kullanıcılarımızın ihtiyaçlarını her zaman ön planda tutuyoruz."
+      },
+      "value2": {
+        "title": "Güvenilirlik",
+        "description": "Şeffaf ve güvenli bir platform sunarak güven inşa ediyoruz."
+      },
+      "value3": {
+        "title": "Sürekli Gelişim",
+        "description": "Teknoloji ve kullanıcı deneyimini sürekli iyileştiriyoruz."
+      },
+      "value4": {
+        "title": "Toplumsal Fayda",
+        "description": "İş dünyasını daha erişilebilir hale getirerek topluma katkı sağlıyoruz."
+      },
+      "value5": {
+        "title": "İnovasyon",
+        "description": "Yenilikçi çözümlerle iş bulma deneyimini yeniden tanımlıyoruz."
+      },
+      "value6": {
+        "title": "Sonuç Odaklı",
+        "description": "Kullanıcılarımızın başarısı bizim başarımızdır."
+      }
+    },
+    "stats": {
+      "users": "Aktif Kullanıcı",
+      "jobs": "Tamamlanan İş",
+      "employers": "Kayıtlı İşveren",
+      "satisfaction": "Kullanıcı Memnuniyeti"
+    },
+    "cta": {
+      "title": "Bize katılın",
+      "description": "Mesai ailesinin bir parçası olun ve iş dünyasında fark yaratın.",
+      "startNow": "Hemen Başla",
+      "contact": "İletişime Geç"
+    }
+  },
+  "services": {
+    "badge": "Hizmetlerimiz",
+    "title": "Size özel",
+    "titleHighlight": "çözümler",
+    "titleEnd": "sunuyoruz",
+    "description": "İş arayanlar ve işverenler için tasarlanmış kapsamlı özellikler ve hizmetler",
+    "forWorkers": {
+      "title": "İş Arayanlar İçin",
+      "subtitle": "Kariyerinizi ilerletmek için ihtiyacınız olan tüm araçlar",
+      "feature1": {
+        "title": "Lokasyon Bazlı İş Bulma",
+        "description": "Akıllı konum eşleştirme ile size en yakın işleri keşfedin."
+      },
+      "feature2": {
+        "title": "Esnek Çalışma Saatleri",
+        "description": "Saatlik veya günlük çalışma seçenekleri ile kendi programınızı oluşturun."
+      },
+      "feature3": {
+        "title": "Güvenli Ödeme Sistemi",
+        "description": "Doğrulanmış işverenler ve garantili ödemelerle güvenle çalışın."
+      },
+      "feature4": {
+        "title": "Anlık Bildirimler",
+        "description": "Yeni iş fırsatları için anında bildirim alın."
+      },
+      "feature5": {
+        "title": "Kazanç Takibi",
+        "description": "Çalışma geçmişinizi ve toplam kazancınızı gerçek zamanlı izleyin."
+      },
+      "feature6": {
+        "title": "Mobil Uygulama",
+        "description": "iOS ve Android uygulamaları ile her yerden erişim."
+      },
+      "cta": "İşçi Olarak Katıl"
+    },
+    "forEmployers": {
+      "title": "İşverenler İçin",
+      "subtitle": "İşe alım sürecinizi hızlandıran profesyonel araçlar",
+      "feature1": {
+        "title": "Hızlı İlan Yayınlama",
+        "description": "Dakikalar içinde iş ilanı oluşturun ve yayınlayın."
+      },
+      "feature2": {
+        "title": "Çoklu İK Hesapları",
+        "description": "Tek şirket profili altında ekip üyelerinizi yönetin."
+      },
+      "feature3": {
+        "title": "Saat ve Ödeme Takibi",
+        "description": "Çalışma saatlerini izleyin ve ödemeleri sorunsuz yönetin."
+      },
+      "feature4": {
+        "title": "Değerlendirme Sistemi",
+        "description": "Çalışanları değerlendirin ve güvenilir ekibinizi oluşturun."
+      },
+      "feature5": {
+        "title": "Şirket Profili",
+        "description": "Profesyonel şirket profilinizle öne çıkın."
+      },
+      "feature6": {
+        "title": "Esnek Ödeme Seçenekleri",
+        "description": "Kredi kartı, havale ve diğer ödeme yöntemleri."
+      },
+      "cta": "İşveren Olarak Katıl"
+    },
+    "pricing": {
+      "title": "Fiyatlandırma",
+      "subtitle": "Size uygun planı seçin ve hemen başlayın",
+      "worker": {
+        "name": "İşçi",
+        "price": "Ücretsiz",
+        "description": "İş arayanlar için tamamen ücretsiz",
+        "feature1": "Sınırsız iş başvurusu",
+        "feature2": "Lokasyon bazlı iş bulma",
+        "feature3": "Güvenli ödeme sistemi",
+        "feature4": "Kazanç takibi",
+        "feature5": "Mobil uygulama erişimi",
+        "cta": "Hemen Başla"
+      },
+      "standard": {
+        "name": "İşveren Standart",
+        "price": "₺499/ay",
+        "description": "Küçük ve orta ölçekli işletmeler için",
+        "feature1": "10 aktif iş ilanı",
+        "feature2": "Sınırsız başvuru",
+        "feature3": "Temel analitik",
+        "feature4": "E-posta desteği",
+        "feature5": "Çalışan değerlendirme",
+        "cta": "Planı Seç"
+      },
+      "premium": {
+        "name": "İşveren Premium",
+        "price": "₺999/ay",
+        "description": "Büyük işletmeler için gelişmiş özellikler",
+        "feature1": "Sınırsız iş ilanı",
+        "feature2": "Öncelikli listeleme",
+        "feature3": "Gelişmiş analitik",
+        "feature4": "Öncelikli destek",
+        "feature5": "Çoklu İK hesapları",
+        "feature6": "API erişimi",
+        "cta": "Planı Seç"
+      }
+    }
+  },
+  "contact": {
+    "badge": "İletişim",
+    "title": "Sizden",
+    "titleHighlight": "haber almak",
+    "titleEnd": "isteriz",
+    "description": "Sorularınız, önerileriniz veya işbirliği teklifleriniz için bize ulaşın",
+    "form": {
+      "title": "Bize Mesaj Gönderin",
+      "firstName": "Ad",
+      "firstNamePlaceholder": "Adınız",
+      "lastName": "Soyad",
+      "lastNamePlaceholder": "Soyadınız",
+      "email": "E-posta",
+      "emailPlaceholder": "ornek@email.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "+90 (5XX) XXX XX XX",
+      "subject": "Konu",
+      "subjectPlaceholder": "Mesajınızın konusu",
+      "message": "Mesaj",
+      "messagePlaceholder": "Mesajınızı buraya yazın...",
+      "submit": "Gönder"
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "description": "Mesai ekibi olarak size yardımcı olmaktan mutluluk duyarız. Aşağıdaki kanallardan bize ulaşabilirsiniz.",
+      "email": {
+        "title": "E-posta",
+        "support": "destek@mesai.com",
+        "info": "info@mesai.com"
+      },
+      "phone": {
+        "title": "Telefon",
+        "number": "+90 (212) 123 45 67",
+        "hours": "Hafta içi 09:00 - 18:00"
+      },
+      "address": {
+        "title": "Adres",
+        "line1": "Maslak Mahallesi, Büyükdere Caddesi",
+        "line2": "No: 123, Sarıyer / İstanbul"
+      },
+      "workingHours": {
+        "title": "Çalışma Saatleri",
+        "weekdays": "Pazartesi - Cuma",
+        "weekdaysHours": "09:00 - 18:00",
+        "saturday": "Cumartesi",
+        "saturdayHours": "10:00 - 16:00",
+        "sunday": "Pazar",
+        "sundayHours": "Kapalı"
+      }
+    }
+  },
+  "faq": {
+    "badge": "Sıkça Sorulan Sorular",
+    "title": "Size",
+    "titleHighlight": "yardımcı",
+    "titleEnd": "olalım",
+    "description": "Mesai hakkında merak ettiğiniz her şey burada",
+    "questions": {
+      "q1": {
+        "question": "Mesai nedir ve nasıl çalışır?",
+        "answer": "Mesai, iş arayanları ve işverenleri lokasyon bazlı olarak buluşturan bir platformdur. Kullanıcılar yakınlarındaki iş fırsatlarını keşfedebilir, başvurabilir ve esnek şekilde çalışabilirler. İşverenler ise hızlıca iş ilanı yayınlayıp uygun adaylarla eşleşebilirler."
+      },
+      "q2": {
+        "question": "Mesai'ye nasıl kayıt olabilirim?",
+        "answer": "Mobil uygulamamızı indirerek veya web sitemiz üzerinden telefon numaranızla hızlıca kayıt olabilirsiniz. Kimlik doğrulama işlemini tamamladıktan sonra hemen iş aramaya veya ilan vermeye başlayabilirsiniz."
+      },
+      "q3": {
+        "question": "İş arayanlar için ücret var mı?",
+        "answer": "Hayır! İş arayanlar için Mesai tamamen ücretsizdir. İş bulma, başvuru yapma ve kazanç takibi gibi tüm özellikler ücretsiz olarak sunulmaktadır."
+      },
+      "q4": {
+        "question": "İşverenler için fiyatlandırma nasıl?",
+        "answer": "İşverenler için Standart (₺499/ay) ve Premium (₺999/ay) olmak üzere iki farklı plan sunuyoruz. Standart plan 10 aktif iş ilanı içerirken, Premium plan sınırsız ilan ve gelişmiş özellikler sunar."
+      },
+      "q5": {
+        "question": "Ödemeler nasıl yapılıyor?",
+        "answer": "Tüm ödemeler platform üzerinden güvenli bir şekilde gerçekleştirilir. İş tamamlandıktan sonra ödeme otomatik olarak işçinin hesabına aktarılır. İşverenler kredi kartı, banka kartı veya havale ile ödeme yapabilirler."
+      },
+      "q6": {
+        "question": "Güvenlik önlemleriniz nelerdir?",
+        "answer": "Tüm kullanıcılarımız kimlik doğrulamasından geçer. İşverenler doğrulanır ve ödemeler güvenli ödeme sistemleri üzerinden yapılır. Ayrıca değerlendirme sistemi sayesinde güvenilir bir topluluk oluşturuyoruz."
+      },
+      "q7": {
+        "question": "Hangi şehirlerde hizmet veriyorsunuz?",
+        "answer": "Şu anda İstanbul, Ankara, İzmir, Bursa ve Antalya'da aktif olarak hizmet veriyoruz. Yakında tüm Türkiye'ye yayılmayı planlıyoruz."
+      },
+      "q8": {
+        "question": "İş bulamadım, ne yapmalıyım?",
+        "answer": "Profilinizi eksiksiz doldurun, yeteneklerinizi belirtin ve bildirimlerinizi açık tutun. Ayrıca lokasyon ayarlarınızı genişleterek daha fazla iş fırsatına erişebilirsiniz. Destek ekibimiz size yardımcı olmak için her zaman hazır."
+      },
+      "q9": {
+        "question": "İşveren olarak nasıl ilan verebilirim?",
+        "answer": "İşveren hesabı oluşturduktan sonra 'İlan Ver' butonuna tıklayarak iş detaylarını, lokasyonu, ücret bilgilerini ve gerekli yetenekleri girebilirsiniz. İlanınız onaylandıktan sonra uygun adaylara gösterilmeye başlar."
+      },
+      "q10": {
+        "question": "Destek ekibinize nasıl ulaşabilirim?",
+        "answer": "İletişim sayfamız üzerinden bize e-posta gönderebilir, telefon ile arayabilir veya canlı destek hattımızdan anlık yardım alabilirsiniz. Hafta içi 09:00-18:00 saatleri arasında aktif olarak hizmet veriyoruz."
+      }
+    },
+    "cta": {
+      "title": "Sorunuz yanıtlanmadı mı?",
+      "description": "Destek ekibimiz size yardımcı olmak için burada. Bize ulaşın, en kısa sürede dönüş yapalım.",
+      "button": "İletişime Geç"
+    }
+  },
+  "careers": {
+    "badge": "Kariyer Fırsatları",
+    "title": "Mesai ailesine",
+    "titleHighlight": "katılın",
+    "description": "İş dünyasını değiştiren bir ekibin parçası olun. Yetenekli, tutkulu ve yenilikçi insanlarla birlikte çalışın.",
+    "benefits": {
+      "title": "Neden Mesai?",
+      "subtitle": "Çalışanlarımıza sunduğumuz avantajlar",
+      "benefit1": {
+        "title": "Sağlık Sigortası",
+        "description": "Kapsamlı özel sağlık sigortası"
+      },
+      "benefit2": {
+        "title": "Esnek Çalışma",
+        "description": "Hibrit ve uzaktan çalışma seçenekleri"
+      },
+      "benefit3": {
+        "title": "Takım Etkinlikleri",
+        "description": "Düzenli takım aktiviteleri ve sosyal etkinlikler"
+      },
+      "benefit4": {
+        "title": "Kariyer Gelişimi",
+        "description": "Eğitim ve gelişim fırsatları"
+      }
+    },
+    "positions": {
+      "title": "Açık Pozisyonlar",
+      "subtitle": "Size uygun pozisyonu bulun ve başvurun",
+      "apply": "Başvur",
+      "position1": {
+        "title": "Senior Full Stack Developer",
+        "department": "Mühendislik",
+        "location": "İstanbul (Hibrit)",
+        "type": "Tam Zamanlı",
+        "description": "React, Node.js ve cloud teknolojileri konusunda deneyimli geliştiriciler arıyoruz."
+      },
+      "position2": {
+        "title": "Product Manager",
+        "department": "Ürün",
+        "location": "İstanbul",
+        "type": "Tam Zamanlı",
+        "description": "Kullanıcı deneyimini iyileştirmek ve ürün stratejisi geliştirmek için lider arıyoruz."
+      },
+      "position3": {
+        "title": "UI/UX Designer",
+        "department": "Tasarım",
+        "location": "Uzaktan",
+        "type": "Tam Zamanlı",
+        "description": "Kullanıcı odaklı, yaratıcı ve detaycı tasarımcılar arıyoruz."
+      },
+      "position4": {
+        "title": "Business Development Manager",
+        "department": "Satış",
+        "location": "İstanbul",
+        "type": "Tam Zamanlı",
+        "description": "İşveren tarafında büyümeyi hızlandıracak deneyimli satış profesyonelleri arıyoruz."
+      },
+      "position5": {
+        "title": "Customer Success Specialist",
+        "department": "Müşteri Hizmetleri",
+        "location": "İstanbul (Hibrit)",
+        "type": "Tam Zamanlı",
+        "description": "Kullanıcılarımıza en iyi deneyimi sunmak için müşteri odaklı ekip üyeleri arıyoruz."
+      },
+      "position6": {
+        "title": "Marketing Manager",
+        "department": "Pazarlama",
+        "location": "İstanbul",
+        "type": "Tam Zamanlı",
+        "description": "Dijital pazarlama stratejileri geliştirecek ve uygulayacak deneyimli pazarlamacılar arıyoruz."
+      }
+    },
+    "cta": {
+      "title": "Aradığınız pozisyonu bulamadınız mı?",
+      "description": "Yine de sizinle tanışmak isteriz! Özgeçmişinizi ve motivasyon mektubunuzu bize gönderin.",
+      "button": "kariyer@mesai.com"
+    }
+  },
+  "privacy": {
+    "badge": "Gizlilik Politikası",
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme: 18 Ekim 2025",
+    "section1": {
+      "title": "1. Giriş",
+      "content": "Mesai Technologies (\"Mesai\", \"biz\", \"bizim\") olarak, kullanıcılarımızın gizliliğini korumayı en önemli önceliklerimizden biri olarak görüyoruz. Bu Gizlilik Politikası, kişisel verilerinizi nasıl topladığımızı, kullandığımızı, sakladığımızı ve koruduğumuzu açıklamaktadır."
+    },
+    "section2": {
+      "title": "2. Topladığımız Bilgiler",
+      "intro": "Hizmetlerimizi sunabilmek için aşağıdaki bilgileri topluyoruz:",
+      "item1": "Kimlik bilgileri (ad, soyad, telefon numarası, e-posta adresi)",
+      "item2": "Lokasyon bilgileri (iş eşleştirme için)",
+      "item3": "Çalışma geçmişi ve yetenekler",
+      "item4": "Ödeme bilgileri (güvenli ödeme sağlayıcıları aracılığıyla)",
+      "item5": "Cihaz ve kullanım bilgileri"
+    },
+    "section3": {
+      "title": "3. Bilgilerin Kullanımı",
+      "intro": "Topladığımız bilgileri şu amaçlarla kullanırız:",
+      "item1": "Platform hizmetlerini sağlamak ve geliştirmek",
+      "item2": "İş arayanlar ve işverenleri eşleştirmek",
+      "item3": "Güvenli ödeme işlemlerini gerçekleştirmek",
+      "item4": "Müşteri desteği sağlamak",
+      "item5": "Platformun güvenliğini sağlamak",
+      "item6": "Yasal yükümlülükleri yerine getirmek"
+    },
+    "section4": {
+      "title": "4. Bilgi Paylaşımı",
+      "intro": "Kişisel bilgilerinizi üçüncü taraflarla yalnızca aşağıdaki durumlarda paylaşırız:",
+      "item1": "İş eşleştirme için gerekli bilgileri işverenler ve iş arayanlar arasında",
+      "item2": "Ödeme işlemleri için güvenli ödeme sağlayıcılarıyla",
+      "item3": "Yasal zorunluluklar gereği yetkili makamlarla",
+      "item4": "Açık rızanız dahilinde"
+    },
+    "section5": {
+      "title": "5. Veri Güvenliği",
+      "content": "Kişisel verilerinizi korumak için endüstri standardı güvenlik önlemleri kullanıyoruz. Verileriniz şifrelenmiş olarak saklanır ve yetkisiz erişime karşı korunur."
+    },
+    "section6": {
+      "title": "6. Haklarınız",
+      "intro": "KVKK kapsamında aşağıdaki haklara sahipsiniz:",
+      "item1": "Kişisel verilerinizin işlenip işlenmediğini öğrenme",
+      "item2": "İşlenmişse buna ilişkin bilgi talep etme",
+      "item3": "Verilerin düzeltilmesini veya silinmesini isteme",
+      "item4": "Verilerin aktarıldığı üçüncü kişileri öğrenme",
+      "item5": "İşlenen verilerin münhasıran otomatik sistemler ile analiz edilmesi sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme"
+    },
+    "section7": {
+      "title": "7. Çerezler",
+      "content": "Platformumuz, kullanıcı deneyimini iyileştirmek için çerezler kullanır. Çerez kullanımı hakkında detaylı bilgi için Çerez Politikamızı inceleyebilirsiniz."
+    },
+    "section8": {
+      "title": "8. Değişiklikler",
+      "content": "Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olduğunda sizi bilgilendireceğiz."
+    },
+    "section9": {
+      "title": "9. İletişim",
+      "intro": "Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:",
+      "email": "E-posta: privacy@mesai.com",
+      "address": "Adres: Mesai Technologies, İstanbul, Türkiye"
+    }
+  },
+  "terms": {
+    "badge": "Kullanım Şartları",
+    "title": "Kullanım Şartları",
+    "lastUpdated": "Son güncelleme: 18 Ekim 2025",
+    "section1": {
+      "title": "1. Hizmet Şartlarının Kabulü",
+      "content": "Mesai platformunu kullanarak, bu Kullanım Şartlarını kabul etmiş sayılırsınız. Bu şartları kabul etmiyorsanız, lütfen platformumuzu kullanmayın."
+    },
+    "section2": {
+      "title": "2. Hesap Oluşturma",
+      "content": "Mesai'ye kayıt olurken doğru, güncel ve eksiksiz bilgiler vermeyi kabul edersiniz. Hesap güvenliğinden siz sorumlusunuz ve hesabınızda gerçekleşen tüm aktivitelerden siz sorumlusunuz."
+    },
+    "section3": {
+      "title": "3. Kullanıcı Sorumlulukları",
+      "intro": "Kullanıcılar olarak şunları kabul edersiniz:",
+      "item1": "18 yaşından büyük olduğunuzu",
+      "item2": "Verdiğiniz bilgilerin doğru ve güncel olduğunu",
+      "item3": "Platformu yasalara uygun şekilde kullanacağınızı",
+      "item4": "Diğer kullanıcılara saygılı davranacağınızı",
+      "item5": "Sahte profil oluşturmayacağınızı"
+    },
+    "section4": {
+      "title": "4. İş Arayanlar İçin Şartlar",
+      "item1": "Başvurduğunuz işlere zamanında ve hazırlıklı gelmelisiniz",
+      "item2": "İşveren talimatlarına uymalısınız",
+      "item3": "Profesyonel davranış sergilemelisiniz",
+      "item4": "İş sözleşmesi şartlarına uymalısınız"
+    },
+    "section5": {
+      "title": "5. İşverenler İçin Şartlar",
+      "item1": "İş ilanlarında doğru ve eksiksiz bilgi vermelisiniz",
+      "item2": "Çalışanlara güvenli çalışma ortamı sağlamalısınız",
+      "item3": "Ödemeleri zamanında yapmalısınız",
+      "item4": "İş kanunlarına ve düzenlemelerine uymalısınız",
+      "item5": "Ayrımcılık yapmamalısınız"
+    },
+    "section6": {
+      "title": "6. Ödemeler ve İadeler",
+      "content": "Tüm ödemeler platform üzerinden güvenli bir şekilde gerçekleştirilir. İşverenler, iş tamamlandıktan sonra ödeme yapmayı kabul eder. İş arayanlar, ödemenin iş tamamlandıktan sonra hesaplarına aktarılacağını kabul eder."
+    },
+    "section7": {
+      "title": "7. Fikri Mülkiyet",
+      "content": "Mesai platformundaki tüm içerik, tasarım, logo ve markalar Mesai Technologies'e aittir. İzinsiz kullanım yasaktır."
+    },
+    "section8": {
+      "title": "8. Sorumluluk Reddi",
+      "content": "Mesai, kullanıcılar arasındaki işlemlerde aracı rolü oynar. İş arayanlar ve işverenler arasındaki anlaşmazlıklardan Mesai sorumlu değildir. Platform \"olduğu gibi\" sunulur ve herhangi bir garanti verilmez."
+    },
+    "section9": {
+      "title": "9. Hesap Askıya Alma ve Sonlandırma",
+      "content": "Mesai, bu şartları ihlal eden kullanıcıların hesaplarını askıya alma veya sonlandırma hakkını saklı tutar."
+    },
+    "section10": {
+      "title": "10. Değişiklikler",
+      "content": "Bu Kullanım Şartları zaman zaman güncellenebilir. Önemli değişiklikler olduğunda kullanıcılar bilgilendirilecektir."
+    },
+    "section11": {
+      "title": "11. İletişim",
+      "intro": "Kullanım şartları hakkında sorularınız için:",
+      "email": "E-posta: legal@mesai.com",
+      "address": "Adres: Mesai Technologies, İstanbul, Türkiye"
+    }
+  },
+  "cookies": {
+    "badge": "Çerez Politikası",
+    "title": "Çerez Politikası",
+    "lastUpdated": "Son güncelleme: 18 Ekim 2025",
+    "section1": {
+      "title": "1. Çerezler Nedir?",
+      "content": "Çerezler, web sitelerini ziyaret ettiğinizde cihazınıza (bilgisayar, tablet veya mobil cihaz) kaydedilen küçük metin dosyalarıdır. Çerezler, web sitelerinin daha verimli çalışmasını sağlar ve kullanıcı deneyimini iyileştirir."
+    },
+    "section2": {
+      "title": "2. Çerez Türleri",
+      "intro": "Mesai platformunda kullandığımız çerez türleri:",
+      "essential": {
+        "title": "Zorunlu Çerezler",
+        "description": "Platformun temel işlevlerini yerine getirmesi için gereklidir. Bu çerezler olmadan platform düzgün çalışmaz."
+      },
+      "performance": {
+        "title": "Performans Çerezleri",
+        "description": "Ziyaretçilerin siteyi nasıl kullandığını anlamamıza yardımcı olur. Bu bilgiler anonim olarak toplanır ve site performansını iyileştirmek için kullanılır."
+      },
+      "functionality": {
+        "title": "İşlevsellik Çerezleri",
+        "description": "Tercihlerinizi hatırlamamıza ve size daha kişiselleştirilmiş bir deneyim sunmamıza olanak tanır (örneğin, dil tercihi, tema seçimi)."
+      },
+      "targeting": {
+        "title": "Hedefleme/Reklam Çerezleri",
+        "description": "Size ve ilgi alanlarınıza daha uygun reklamlar göstermek için kullanılır. Ayrıca bir reklamın kaç kez gösterildiğini sınırlamak için de kullanılabilir."
+      }
+    },
+    "section3": {
+      "title": "3. Kullandığımız Çerezler",
+      "table": {
+        "name": "Çerez Adı",
+        "type": "Tür",
+        "duration": "Süre",
+        "purpose": "Amaç",
+        "cookie1": {
+          "name": "session_id",
+          "type": "Zorunlu",
+          "duration": "Oturum",
+          "purpose": "Kullanıcı oturumunu yönetir"
+        },
+        "cookie2": {
+          "name": "auth_token",
+          "type": "Zorunlu",
+          "duration": "30 gün",
+          "purpose": "Kimlik doğrulama"
+        },
+        "cookie3": {
+          "name": "theme_preference",
+          "type": "İşlevsellik",
+          "duration": "1 yıl",
+          "purpose": "Tema tercihini hatırlar"
+        },
+        "cookie4": {
+          "name": "_ga",
+          "type": "Performans",
+          "duration": "2 yıl",
+          "purpose": "Google Analytics"
+        }
+      }
+    },
+    "section4": {
+      "title": "4. Çerezleri Nasıl Kontrol Edebilirsiniz?",
+      "intro": "Çoğu web tarayıcısı çerezleri otomatik olarak kabul eder, ancak tarayıcı ayarlarınızdan çerezleri reddedebilir veya silebilirsiniz. Ancak, çerezleri devre dışı bırakırsanız, platformun bazı özellikleri düzgün çalışmayabilir.",
+      "chrome": "Chrome: Ayarlar → Gizlilik ve güvenlik → Çerezler",
+      "firefox": "Firefox: Ayarlar → Gizlilik ve Güvenlik → Çerezler ve Site Verileri",
+      "safari": "Safari: Tercihler → Gizlilik → Çerezler ve web sitesi verileri",
+      "edge": "Edge: Ayarlar → Çerezler ve site izinleri"
+    },
+    "section5": {
+      "title": "5. Üçüncü Taraf Çerezleri",
+      "content": "Platformumuzda Google Analytics gibi üçüncü taraf hizmetler kullanıyoruz. Bu hizmetler kendi çerezlerini kullanabilir. Bu çerezler hakkında daha fazla bilgi için ilgili üçüncü tarafların gizlilik politikalarını inceleyebilirsiniz."
+    },
+    "section6": {
+      "title": "6. Çerez Politikası Güncellemeleri",
+      "content": "Bu Çerez Politikası zaman zaman güncellenebilir. Önemli değişiklikler olduğunda sizi bilgilendireceğiz."
+    },
+    "section7": {
+      "title": "7. İletişim",
+      "intro": "Çerez politikamız hakkında sorularınız için:",
+      "email": "E-posta: privacy@mesai.com",
+      "address": "Adres: Mesai Technologies, İstanbul, Türkiye"
+    }
   }
 }

@@ -18,8 +18,11 @@ import {
   BarChart,
   ArrowRight,
 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function ServicesPage() {
+  const t = useTranslations("services")
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
@@ -33,15 +36,15 @@ export default function ServicesPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-accent-green/30 bg-accent-green/10 px-4 py-2 text-sm font-medium text-accent-green">
               <Zap className="h-4 w-4" />
-              <span>Hizmetlerimiz</span>
+              <span>{t("badge")}</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-[1.1]">
-              Size özel <span className="text-neon">çözümler</span> sunuyoruz
+              {t("title")} <span className="text-neon">{t("titleHighlight")}</span> {t("titleEnd")}
             </h1>
 
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed max-w-3xl mx-auto">
-              İş arayanlar ve işverenler için tasarlanmış kapsamlı özellikler ve hizmetler
+              {t("description")}
             </p>
           </div>
         </div>
@@ -51,44 +54,18 @@ export default function ServicesPage() {
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">İş Arayanlar İçin</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              Kariyerinizi ilerletmek için ihtiyacınız olan tüm araçlar
-            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("forWorkers.title")}</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("forWorkers.subtitle")}</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              {
-                icon: MapPin,
-                title: "Lokasyon Bazlı İş Bulma",
-                description: "Akıllı konum eşleştirme ile size en yakın işleri keşfedin.",
-              },
-              {
-                icon: Clock,
-                title: "Esnek Çalışma Saatleri",
-                description: "Saatlik veya günlük çalışma seçenekleri ile kendi programınızı oluşturun.",
-              },
-              {
-                icon: Shield,
-                title: "Güvenli Ödeme Sistemi",
-                description: "Doğrulanmış işverenler ve garantili ödemelerle güvenle çalışın.",
-              },
-              {
-                icon: Bell,
-                title: "Anlık Bildirimler",
-                description: "Yeni iş fırsatları için anında bildirim alın.",
-              },
-              {
-                icon: BarChart,
-                title: "Kazanç Takibi",
-                description: "Çalışma geçmişinizi ve toplam kazancınızı gerçek zamanlı izleyin.",
-              },
-              {
-                icon: Smartphone,
-                title: "Mobil Uygulama",
-                description: "iOS ve Android uygulamaları ile her yerden erişim.",
-              },
+              { icon: MapPin, key: "feature1" },
+              { icon: Clock, key: "feature2" },
+              { icon: Shield, key: "feature3" },
+              { icon: Bell, key: "feature4" },
+              { icon: BarChart, key: "feature5" },
+              { icon: Smartphone, key: "feature6" },
             ].map((feature, i) => (
               <Card
                 key={i}
@@ -98,8 +75,10 @@ export default function ServicesPage() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-neon/10 ring-1 ring-neon/20 group-hover:bg-neon/20 transition-colors">
                     <feature.icon className="h-7 w-7 text-neon" />
                   </div>
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-semibold">{t(`forWorkers.${feature.key}.title`)}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t(`forWorkers.${feature.key}.description`)}
+                  </p>
                 </div>
               </Card>
             ))}
@@ -107,7 +86,7 @@ export default function ServicesPage() {
 
           <div className="text-center mt-12">
             <Button size="lg" className="bg-neon text-background hover:bg-neon/90">
-              İşçi Olarak Katıl
+              {t("forWorkers.cta")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -118,44 +97,18 @@ export default function ServicesPage() {
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">İşverenler İçin</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              İşe alım sürecinizi hızlandıran profesyonel araçlar
-            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("forEmployers.title")}</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("forEmployers.subtitle")}</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              {
-                icon: Zap,
-                title: "Hızlı İlan Yayınlama",
-                description: "Dakikalar içinde iş ilanı oluşturun ve yayınlayın.",
-              },
-              {
-                icon: Users,
-                title: "Çoklu İK Hesapları",
-                description: "Tek şirket profili altında ekip üyelerinizi yönetin.",
-              },
-              {
-                icon: Clock,
-                title: "Saat ve Ödeme Takibi",
-                description: "Çalışma saatlerini izleyin ve ödemeleri sorunsuz yönetin.",
-              },
-              {
-                icon: CheckCircle2,
-                title: "Değerlendirme Sistemi",
-                description: "Çalışanları değerlendirin ve güvenilir ekibinizi oluşturun.",
-              },
-              {
-                icon: Building2,
-                title: "Şirket Profili",
-                description: "Profesyonel şirket profilinizle öne çıkın.",
-              },
-              {
-                icon: CreditCard,
-                title: "Esnek Ödeme Seçenekleri",
-                description: "Kredi kartı, havale ve diğer ödeme yöntemleri.",
-              },
+              { icon: Zap, key: "feature1" },
+              { icon: Users, key: "feature2" },
+              { icon: Clock, key: "feature3" },
+              { icon: CheckCircle2, key: "feature4" },
+              { icon: Building2, key: "feature5" },
+              { icon: CreditCard, key: "feature6" },
             ].map((feature, i) => (
               <Card
                 key={i}
@@ -165,8 +118,10 @@ export default function ServicesPage() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-green/10 ring-1 ring-accent-green/20 group-hover:bg-accent-green/20 transition-colors">
                     <feature.icon className="h-7 w-7 text-accent-green" />
                   </div>
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-semibold">{t(`forEmployers.${feature.key}.title`)}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t(`forEmployers.${feature.key}.description`)}
+                  </p>
                 </div>
               </Card>
             ))}
@@ -174,7 +129,7 @@ export default function ServicesPage() {
 
           <div className="text-center mt-12">
             <Button size="lg" className="bg-accent-green text-background hover:bg-accent-green/90">
-              İşveren Olarak Katıl
+              {t("forEmployers.cta")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -185,92 +140,53 @@ export default function ServicesPage() {
       <section id="pricing" className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Fiyatlandırma</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              Size uygun planı seçin ve hemen başlayın
-            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("pricing.title")}</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("pricing.subtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                name: "İşçi",
-                price: "Ücretsiz",
-                description: "İş arayanlar için tamamen ücretsiz",
-                features: [
-                  "Sınırsız iş başvurusu",
-                  "Lokasyon bazlı iş bulma",
-                  "Güvenli ödeme sistemi",
-                  "Kazanç takibi",
-                  "Mobil uygulama erişimi",
-                ],
-                cta: "Hemen Başla",
-                highlighted: false,
-              },
-              {
-                name: "İşveren Standart",
-                price: "₺499/ay",
-                description: "Küçük ve orta ölçekli işletmeler için",
-                features: [
-                  "10 aktif iş ilanı",
-                  "Sınırsız başvuru",
-                  "Temel analitik",
-                  "E-posta desteği",
-                  "Çalışan değerlendirme",
-                ],
-                cta: "Planı Seç",
-                highlighted: true,
-              },
-              {
-                name: "İşveren Premium",
-                price: "₺999/ay",
-                description: "Büyük işletmeler için gelişmiş özellikler",
-                features: [
-                  "Sınırsız iş ilanı",
-                  "Öncelikli listeleme",
-                  "Gelişmiş analitik",
-                  "Öncelikli destek",
-                  "Çoklu İK hesapları",
-                  "API erişimi",
-                ],
-                cta: "Planı Seç",
-                highlighted: false,
-              },
-            ].map((plan, i) => (
+            {["worker", "standard", "premium"].map((plan, i) => (
               <Card
                 key={i}
                 className={`p-8 border-border/50 bg-card/50 backdrop-blur-sm ${
-                  plan.highlighted ? "ring-2 ring-neon scale-105" : ""
+                  plan === "standard" ? "ring-2 ring-neon scale-105" : ""
                 }`}
               >
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                    <p className="text-sm text-muted-foreground">{plan.description}</p>
+                    <h3 className="text-2xl font-bold mb-2">{t(`pricing.${plan}.name`)}</h3>
+                    <p className="text-sm text-muted-foreground">{t(`pricing.${plan}.description`)}</p>
                   </div>
 
                   <div className="text-4xl font-bold">
-                    {plan.price}
-                    {plan.price !== "Ücretsiz" && <span className="text-lg text-muted-foreground">/ay</span>}
+                    {t(`pricing.${plan}.price`)}
+                    {t(`pricing.${plan}.price`) !== t("pricing.worker.price") && (
+                      <span className="text-lg text-muted-foreground">/ay</span>
+                    )}
                   </div>
 
                   <ul className="space-y-3">
-                    {plan.features.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-neon shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
+                    {[1, 2, 3, 4, 5, ...(plan === "premium" ? [6] : [])].map((num) => {
+                      const featureKey = `pricing.${plan}.feature${num}`
+                      return (
+                        <li key={num} className="flex items-start gap-3">
+                          <CheckCircle2 className="h-5 w-5 text-neon shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">{t(featureKey)}</span>
+                        </li>
+                      )
+                    })}
                   </ul>
 
                   <Button
                     size="lg"
                     className={`w-full ${
-                      plan.highlighted ? "bg-neon text-background hover:bg-neon/90" : "bg-transparent hover:bg-accent"
+                      plan === "standard"
+                        ? "bg-neon text-background hover:bg-neon/90"
+                        : "bg-transparent hover:bg-accent"
                     }`}
-                    variant={plan.highlighted ? "default" : "outline"}
+                    variant={plan === "standard" ? "default" : "outline"}
                   >
-                    {plan.cta}
+                    {t(`pricing.${plan}.cta`)}
                   </Button>
                 </div>
               </Card>

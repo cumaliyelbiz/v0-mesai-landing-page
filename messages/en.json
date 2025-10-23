@@ -153,5 +153,554 @@
     "cookies": "Cookie Policy",
     "faq": "FAQ",
     "rights": "All rights reserved."
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Making the job world",
+    "titleHighlight": "more accessible",
+    "titleEnd": "for everyone",
+    "description": "Mesai is a platform that removes barriers between job seekers and employers, enabling everyone to work flexibly and securely.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To build a secure, fast, and transparent bridge between job seekers and employers. To democratize the job world through technology, enabling everyone to work on their own terms."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become Turkey's most trusted and user-friendly job finding platform. To touch the lives of millions and create a new standard in the job world."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The core principles that shape Mesai",
+      "value1": {
+        "title": "People-Focused",
+        "description": "We always prioritize our users' needs."
+      },
+      "value2": {
+        "title": "Reliability",
+        "description": "We build trust by providing a transparent and secure platform."
+      },
+      "value3": {
+        "title": "Continuous Improvement",
+        "description": "We constantly improve technology and user experience."
+      },
+      "value4": {
+        "title": "Social Benefit",
+        "description": "We contribute to society by making the job world more accessible."
+      },
+      "value5": {
+        "title": "Innovation",
+        "description": "We redefine the job finding experience with innovative solutions."
+      },
+      "value6": {
+        "title": "Results-Oriented",
+        "description": "Our users' success is our success."
+      }
+    },
+    "stats": {
+      "users": "Active Users",
+      "jobs": "Completed Jobs",
+      "employers": "Registered Employers",
+      "satisfaction": "User Satisfaction"
+    },
+    "cta": {
+      "title": "Join us",
+      "description": "Become part of the Mesai family and make a difference in the job world.",
+      "startNow": "Get Started",
+      "contact": "Contact Us"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Tailored",
+    "titleHighlight": "solutions",
+    "titleEnd": "for you",
+    "description": "Comprehensive features and services designed for job seekers and employers",
+    "forWorkers": {
+      "title": "For Job Seekers",
+      "subtitle": "All the tools you need to advance your career",
+      "feature1": {
+        "title": "Location-Based Job Finding",
+        "description": "Discover jobs closest to you with smart location matching."
+      },
+      "feature2": {
+        "title": "Flexible Working Hours",
+        "description": "Create your own schedule with hourly or daily work options."
+      },
+      "feature3": {
+        "title": "Secure Payment System",
+        "description": "Work confidently with verified employers and guaranteed payments."
+      },
+      "feature4": {
+        "title": "Instant Notifications",
+        "description": "Get notified immediately about new job opportunities."
+      },
+      "feature5": {
+        "title": "Earnings Tracking",
+        "description": "Monitor your work history and total earnings in real-time."
+      },
+      "feature6": {
+        "title": "Mobile App",
+        "description": "Access from anywhere with iOS and Android apps."
+      },
+      "cta": "Join as Worker"
+    },
+    "forEmployers": {
+      "title": "For Employers",
+      "subtitle": "Professional tools to accelerate your hiring process",
+      "feature1": {
+        "title": "Quick Job Posting",
+        "description": "Create and publish job listings in minutes."
+      },
+      "feature2": {
+        "title": "Multiple HR Accounts",
+        "description": "Manage team members under a single company profile."
+      },
+      "feature3": {
+        "title": "Hours and Payment Tracking",
+        "description": "Monitor work hours and manage payments seamlessly."
+      },
+      "feature4": {
+        "title": "Rating System",
+        "description": "Evaluate employees and build your reliable team."
+      },
+      "feature5": {
+        "title": "Company Profile",
+        "description": "Stand out with your professional company profile."
+      },
+      "feature6": {
+        "title": "Flexible Payment Options",
+        "description": "Credit card, wire transfer, and other payment methods."
+      },
+      "cta": "Join as Employer"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Choose the plan that suits you and get started",
+      "worker": {
+        "name": "Worker",
+        "price": "Free",
+        "description": "Completely free for job seekers",
+        "feature1": "Unlimited job applications",
+        "feature2": "Location-based job finding",
+        "feature3": "Secure payment system",
+        "feature4": "Earnings tracking",
+        "feature5": "Mobile app access",
+        "cta": "Get Started"
+      },
+      "standard": {
+        "name": "Employer Standard",
+        "price": "₺499/month",
+        "description": "For small and medium-sized businesses",
+        "feature1": "10 active job listings",
+        "feature2": "Unlimited applications",
+        "feature3": "Basic analytics",
+        "feature4": "Email support",
+        "feature5": "Employee rating",
+        "cta": "Choose Plan"
+      },
+      "premium": {
+        "name": "Employer Premium",
+        "price": "₺999/month",
+        "description": "Advanced features for large businesses",
+        "feature1": "Unlimited job listings",
+        "feature2": "Priority listing",
+        "feature3": "Advanced analytics",
+        "feature4": "Priority support",
+        "feature5": "Multiple HR accounts",
+        "feature6": "API access",
+        "cta": "Choose Plan"
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "We'd love to",
+    "titleHighlight": "hear from you",
+    "description": "Reach out to us with your questions, suggestions, or collaboration proposals",
+    "form": {
+      "title": "Send Us a Message",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+90 (5XX) XXX XX XX",
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "submit": "Send"
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "The Mesai team is happy to help you. You can reach us through the following channels.",
+      "email": {
+        "title": "Email",
+        "support": "support@mesai.com",
+        "info": "info@mesai.com"
+      },
+      "phone": {
+        "title": "Phone",
+        "number": "+90 (212) 123 45 67",
+        "hours": "Weekdays 09:00 - 18:00"
+      },
+      "address": {
+        "title": "Address",
+        "line1": "Maslak District, Büyükdere Avenue",
+        "line2": "No: 123, Sarıyer / Istanbul"
+      },
+      "workingHours": {
+        "title": "Working Hours",
+        "weekdays": "Monday - Friday",
+        "weekdaysHours": "09:00 - 18:00",
+        "saturday": "Saturday",
+        "saturdayHours": "10:00 - 16:00",
+        "sunday": "Sunday",
+        "sundayHours": "Closed"
+      }
+    }
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "Let us",
+    "titleHighlight": "help you",
+    "description": "Everything you want to know about Mesai",
+    "questions": {
+      "q1": {
+        "question": "What is Mesai and how does it work?",
+        "answer": "Mesai is a platform that connects job seekers and employers based on location. Users can discover, apply for, and work flexibly at nearby job opportunities. Employers can quickly post job listings and match with suitable candidates."
+      },
+      "q2": {
+        "question": "How can I register for Mesai?",
+        "answer": "You can quickly register by downloading our mobile app or through our website using your phone number. After completing identity verification, you can immediately start searching for jobs or posting listings."
+      },
+      "q3": {
+        "question": "Is there a fee for job seekers?",
+        "answer": "No! Mesai is completely free for job seekers. All features including job finding, applying, and earnings tracking are provided free of charge."
+      },
+      "q4": {
+        "question": "What is the pricing for employers?",
+        "answer": "We offer two different plans for employers: Standard (₺499/month) and Premium (₺999/month). The Standard plan includes 10 active job listings, while the Premium plan offers unlimited listings and advanced features."
+      },
+      "q5": {
+        "question": "How are payments made?",
+        "answer": "All payments are made securely through the platform. After the job is completed, payment is automatically transferred to the worker's account. Employers can pay by credit card, debit card, or wire transfer."
+      },
+      "q6": {
+        "question": "What are your security measures?",
+        "answer": "All our users go through identity verification. Employers are verified and payments are made through secure payment systems. We also create a trustworthy community through our rating system."
+      },
+      "q7": {
+        "question": "Which cities do you serve?",
+        "answer": "We currently actively serve in Istanbul, Ankara, Izmir, Bursa, and Antalya. We plan to expand throughout Turkey soon."
+      },
+      "q8": {
+        "question": "I couldn't find a job, what should I do?",
+        "answer": "Complete your profile, specify your skills, and keep your notifications on. You can also access more job opportunities by expanding your location settings. Our support team is always ready to help you."
+      },
+      "q9": {
+        "question": "How can I post a listing as an employer?",
+        "answer": "After creating an employer account, click the 'Post Job' button to enter job details, location, salary information, and required skills. Your listing will start showing to suitable candidates after approval."
+      },
+      "q10": {
+        "question": "How can I reach your support team?",
+        "answer": "You can send us an email through our contact page, call us by phone, or get instant help from our live support line. We actively serve weekdays between 09:00-18:00."
+      }
+    },
+    "cta": {
+      "title": "Didn't find your answer?",
+      "description": "Our support team is here to help you. Contact us and we'll get back to you as soon as possible.",
+      "button": "Contact Us"
+    }
+  },
+  "careers": {
+    "badge": "Career Opportunities",
+    "title": "Join the",
+    "titleHighlight": "Mesai family",
+    "description": "Be part of a team that's changing the job world. Work with talented, passionate, and innovative people.",
+    "benefits": {
+      "title": "Why Mesai?",
+      "subtitle": "Benefits we offer our employees",
+      "benefit1": {
+        "title": "Health Insurance",
+        "description": "Comprehensive private health insurance"
+      },
+      "benefit2": {
+        "title": "Flexible Work",
+        "description": "Hybrid and remote work options"
+      },
+      "benefit3": {
+        "title": "Team Activities",
+        "description": "Regular team activities and social events"
+      },
+      "benefit4": {
+        "title": "Career Development",
+        "description": "Training and development opportunities"
+      }
+    },
+    "positions": {
+      "title": "Open Positions",
+      "subtitle": "Find the position that suits you and apply",
+      "apply": "Apply",
+      "position1": {
+        "title": "Senior Full Stack Developer",
+        "department": "Engineering",
+        "location": "Istanbul (Hybrid)",
+        "type": "Full-Time",
+        "description": "We're looking for experienced developers in React, Node.js, and cloud technologies."
+      },
+      "position2": {
+        "title": "Product Manager",
+        "department": "Product",
+        "location": "Istanbul",
+        "type": "Full-Time",
+        "description": "We're looking for a leader to improve user experience and develop product strategy."
+      },
+      "position3": {
+        "title": "UI/UX Designer",
+        "department": "Design",
+        "location": "Remote",
+        "type": "Full-Time",
+        "description": "We're looking for user-focused, creative, and detail-oriented designers."
+      },
+      "position4": {
+        "title": "Business Development Manager",
+        "department": "Sales",
+        "location": "Istanbul",
+        "type": "Full-Time",
+        "description": "We're looking for experienced sales professionals to accelerate growth on the employer side."
+      },
+      "position5": {
+        "title": "Customer Success Specialist",
+        "department": "Customer Service",
+        "location": "Istanbul (Hybrid)",
+        "type": "Full-Time",
+        "description": "We're looking for customer-focused team members to provide the best experience to our users."
+      },
+      "position6": {
+        "title": "Marketing Manager",
+        "department": "Marketing",
+        "location": "Istanbul",
+        "type": "Full-Time",
+        "description": "We're looking for experienced marketers to develop and implement digital marketing strategies."
+      }
+    },
+    "cta": {
+      "title": "Couldn't find the position you're looking for?",
+      "description": "We'd still love to meet you! Send us your resume and cover letter.",
+      "button": "careers@mesai.com"
+    }
+  },
+  "privacy": {
+    "badge": "Privacy Policy",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: October 18, 2025",
+    "section1": {
+      "title": "1. Introduction",
+      "content": "As Mesai Technologies (\"Mesai\", \"we\", \"our\"), we consider protecting our users' privacy as one of our top priorities. This Privacy Policy explains how we collect, use, store, and protect your personal data."
+    },
+    "section2": {
+      "title": "2. Information We Collect",
+      "intro": "To provide our services, we collect the following information:",
+      "item1": "Identity information (name, surname, phone number, email address)",
+      "item2": "Location information (for job matching)",
+      "item3": "Work history and skills",
+      "item4": "Payment information (through secure payment providers)",
+      "item5": "Device and usage information"
+    },
+    "section3": {
+      "title": "3. Use of Information",
+      "intro": "We use the collected information for the following purposes:",
+      "item1": "To provide and improve platform services",
+      "item2": "To match job seekers with employers",
+      "item3": "To process secure payments",
+      "item4": "To provide customer support",
+      "item5": "To ensure platform security",
+      "item6": "To fulfill legal obligations"
+    },
+    "section4": {
+      "title": "4. Information Sharing",
+      "intro": "We share your personal information with third parties only in the following cases:",
+      "item1": "Necessary information between employers and job seekers for job matching",
+      "item2": "With secure payment providers for payment processing",
+      "item3": "With authorized authorities due to legal requirements",
+      "item4": "With your explicit consent"
+    },
+    "section5": {
+      "title": "5. Data Security",
+      "content": "We use industry-standard security measures to protect your personal data. Your data is stored encrypted and protected against unauthorized access."
+    },
+    "section6": {
+      "title": "6. Your Rights",
+      "intro": "Under KVKK, you have the following rights:",
+      "item1": "To learn whether your personal data is being processed",
+      "item2": "To request information if it has been processed",
+      "item3": "To request correction or deletion of data",
+      "item4": "To learn the third parties to whom data has been transferred",
+      "item5": "To object to a result against you arising from the analysis of processed data exclusively through automated systems"
+    },
+    "section7": {
+      "title": "7. Cookies",
+      "content": "Our platform uses cookies to improve user experience. For detailed information about cookie usage, please review our Cookie Policy."
+    },
+    "section8": {
+      "title": "8. Changes",
+      "content": "This Privacy Policy may be updated from time to time. We will inform you when significant changes occur."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "intro": "For questions about our privacy policy, you can contact us:",
+      "email": "Email: privacy@mesai.com",
+      "address": "Address: Mesai Technologies, Istanbul, Turkey"
+    }
+  },
+  "terms": {
+    "badge": "Terms of Service",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: October 18, 2025",
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "content": "By using the Mesai platform, you are deemed to have accepted these Terms of Service. If you do not accept these terms, please do not use our platform."
+    },
+    "section2": {
+      "title": "2. Account Creation",
+      "content": "When registering for Mesai, you agree to provide accurate, current, and complete information. You are responsible for account security and all activities that occur on your account."
+    },
+    "section3": {
+      "title": "3. User Responsibilities",
+      "intro": "As users, you agree that:",
+      "item1": "You are over 18 years old",
+      "item2": "The information you provide is accurate and current",
+      "item3": "You will use the platform in compliance with laws",
+      "item4": "You will treat other users respectfully",
+      "item5": "You will not create fake profiles"
+    },
+    "section4": {
+      "title": "4. Terms for Job Seekers",
+      "item1": "You must arrive on time and prepared for jobs you apply to",
+      "item2": "You must follow employer instructions",
+      "item3": "You must exhibit professional behavior",
+      "item4": "You must comply with employment contract terms"
+    },
+    "section5": {
+      "title": "5. Terms for Employers",
+      "item1": "You must provide accurate and complete information in job listings",
+      "item2": "You must provide a safe working environment for employees",
+      "item3": "You must make payments on time",
+      "item4": "You must comply with labor laws and regulations",
+      "item5": "You must not discriminate"
+    },
+    "section6": {
+      "title": "6. Payments and Refunds",
+      "content": "All payments are made securely through the platform. Employers agree to make payment after the job is completed. Job seekers agree that payment will be transferred to their account after the job is completed."
+    },
+    "section7": {
+      "title": "7. Intellectual Property",
+      "content": "All content, design, logos, and trademarks on the Mesai platform belong to Mesai Technologies. Unauthorized use is prohibited."
+    },
+    "section8": {
+      "title": "8. Disclaimer",
+      "content": "Mesai acts as an intermediary in transactions between users. Mesai is not responsible for disputes between job seekers and employers. The platform is provided \"as is\" and no warranty is given."
+    },
+    "section9": {
+      "title": "9. Account Suspension and Termination",
+      "content": "Mesai reserves the right to suspend or terminate accounts of users who violate these terms."
+    },
+    "section10": {
+      "title": "10. Changes",
+      "content": "These Terms of Service may be updated from time to time. Users will be informed when significant changes occur."
+    },
+    "section11": {
+      "title": "11. Contact",
+      "intro": "For questions about the terms of service:",
+      "email": "Email: legal@mesai.com",
+      "address": "Address: Mesai Technologies, Istanbul, Turkey"
+    }
+  },
+  "cookies": {
+    "badge": "Cookie Policy",
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: October 18, 2025",
+    "section1": {
+      "title": "1. What Are Cookies?",
+      "content": "Cookies are small text files saved to your device (computer, tablet, or mobile device) when you visit websites. Cookies enable websites to work more efficiently and improve user experience."
+    },
+    "section2": {
+      "title": "2. Types of Cookies",
+      "intro": "Types of cookies we use on the Mesai platform:",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "Required for the platform's basic functions. The platform does not work properly without these cookies."
+      },
+      "performance": {
+        "title": "Performance Cookies",
+        "description": "Help us understand how visitors use the site. This information is collected anonymously and used to improve site performance."
+      },
+      "functionality": {
+        "title": "Functionality Cookies",
+        "description": "Allow us to remember your preferences and provide you with a more personalized experience (e.g., language preference, theme selection)."
+      },
+      "targeting": {
+        "title": "Targeting/Advertising Cookies",
+        "description": "Used to show you ads more relevant to you and your interests. Can also be used to limit how many times an ad is shown."
+      }
+    },
+    "section3": {
+      "title": "3. Cookies We Use",
+      "table": {
+        "name": "Cookie Name",
+        "type": "Type",
+        "duration": "Duration",
+        "purpose": "Purpose",
+        "cookie1": {
+          "name": "session_id",
+          "type": "Essential",
+          "duration": "Session",
+          "purpose": "Manages user session"
+        },
+        "cookie2": {
+          "name": "auth_token",
+          "type": "Essential",
+          "duration": "30 days",
+          "purpose": "Authentication"
+        },
+        "cookie3": {
+          "name": "theme_preference",
+          "type": "Functionality",
+          "duration": "1 year",
+          "purpose": "Remembers theme preference"
+        },
+        "cookie4": {
+          "name": "_ga",
+          "type": "Performance",
+          "duration": "2 years",
+          "purpose": "Google Analytics"
+        }
+      }
+    },
+    "section4": {
+      "title": "4. How Can You Control Cookies?",
+      "intro": "Most web browsers automatically accept cookies, but you can refuse or delete cookies from your browser settings. However, if you disable cookies, some features of the platform may not work properly.",
+      "chrome": "Chrome: Settings → Privacy and security → Cookies",
+      "firefox": "Firefox: Settings → Privacy and Security → Cookies and Site Data",
+      "safari": "Safari: Preferences → Privacy → Cookies and website data",
+      "edge": "Edge: Settings → Cookies and site permissions"
+    },
+    "section5": {
+      "title": "5. Third-Party Cookies",
+      "content": "We use third-party services such as Google Analytics on our platform. These services may use their own cookies. For more information about these cookies, please review the privacy policies of the relevant third parties."
+    },
+    "section6": {
+      "title": "6. Cookie Policy Updates",
+      "content": "This Cookie Policy may be updated from time to time. We will inform you when significant changes occur."
+    },
+    "section7": {
+      "title": "7. Contact",
+      "intro": "For questions about our cookie policy:",
+      "email": "Email: privacy@mesai.com",
+      "address": "Address: Mesai Technologies, Istanbul, Turkey"
+    }
   }
 }

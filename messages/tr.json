@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "contact": "İletişim",
+    "login": "Giriş Yap",
+    "getStarted": "Başla"
+  },
+  "hero": {
+    "badge": "İş dünyası basitleşti",
+    "title": "Yakınınızda iş bulun.",
+    "titleHighlight": "Hızlı, esnek,",
+    "titleEnd": "kendi şartlarınızda.",
+    "description": "Mesai, iş arayanları ve işverenleri gerçek zamanlı olarak buluşturur — lokasyon bazlı işleri keşfedin ve hemen çalışmaya başlayın.",
+    "startNow": "Hemen Başla",
+    "watchDemo": "Demo İzle",
+    "activeUsers": "10,000+ aktif kullanıcı",
+    "joinCommunity": "Topluluğa katılın"
+  },
+  "howItWorks": {
+    "title": "Nasıl Çalışır",
+    "subtitle": "Üç basit adımda başlayın ve sonraki fırsatınızı bulun",
+    "step1": {
+      "title": "Kimliğinizi Doğrulayın",
+      "description": "Telefon numaranızı girin ve hızlı doğrulama ile güvenli başlayın."
+    },
+    "step2": {
+      "title": "Yakınızda İşleri Keşfedin",
+      "description": "Yetenekleriniz ve uygunluklarınızla eşleşen lokasyon tabanlı fırsatları keşfedin."
+    },
+    "step3": {
+      "title": "Başvurun ve Kazanmaya Başlayın",
+      "description": "İşlere hızlı başvurun ve esnek zamanlamalarla çalışın."
+    }
+  },
+  "forWorkers": {
+    "badge": "İş Arayanlar için",
+    "title": "Sonraki işiniz yakında.",
+    "description": "Zamanlamalarınız ve lokasyonunuzla uyumlu esnek iş fırsatlarını bulun. Doğrulanmış işverenlerle kendi şartlarınızda çalışın.",
+    "feature1": {
+      "title": "Lokasyon Bazlı İşler",
+      "description": "Akıllı lokasyon eşleştirme ile yakınızda iş bulun"
+    },
+    "feature2": {
+      "title": "Esnek Zamanlamalar",
+      "description": "Saatlik veya günlük iş seçin ve hayatınıza uymak"
+    },
+    "feature3": {
+      "title": "Doğrulanmış İşverenler",
+      "description": "Güvenilir şirketlerle çalışın ve güvenli ödemeler yapın"
+    },
+    "feature4": {
+      "title": "Kazançlarınızı Takip Edin",
+      "description": "İş geçmişi ve toplam kazançlarınızı gerçek zamanlı olarak izleyin"
+    },
+    "cta": "İşçi Olarak Katılın",
+    "dashboard": {
+      "title": "Paneliniz",
+      "totalEarnings": "Toplam Kazanç",
+      "completedJobs": "Tamamlanan İşler",
+      "recentJobs": "Son İşler",
+      "warehouseAssistant": "Depo Asistanı",
+      "away": "uzaklıktaki",
+      "perDay": "/gün"
+    }
+  },
+  "forEmployers": {
+    "badge": "İşverenler için",
+    "title": "Hızlı olarak iş alın. Kolay yönetin.",
+    "description": "Kısa vadeli işleri dakikalar içinde yayınlayın ve bölgenizdeki yetenekli işçilerle bağlantı kurun. İş alma sürecinizi basitleştirin.",
+    "feature1": {
+      "title": "Anında İş Gönderimi",
+      "description": "İş ilanları oluşturun ve yayınlayın"
+    },
+    "feature2": {
+      "title": "Çoklu HR Hesapları",
+      "description": "Tüm şirket profiliniz altında takım üyelerini yönetin"
+    },
+    "feature3": {
+      "title": "Çalışma Saatlerini ve Ödemeleri Takip Edin",
+      "description": "Çalışma saatlerini izleyin ve ödemeleri sorunsuz yönetin"
+    },
+    "feature4": {
+      "title": "Puanlayın ve Tekrar İşleyin",
+      "description": "Güvenilir işçi ağınıza puanlarla katılmak"
+    },
+    "cta": "İşveren Olarak Katılın",
+    "dashboard": {
+      "title": "İşveren Paneli",
+      "activeJobPosts": "Aktif İş Gönderileri",
+      "positionsFilled": "pozisyonlar dolduruldu",
+      "recentApplications": "Son Başvurular",
+      "candidate": "Aday",
+      "rating": "puan",
+      "view": "Görüntüle"
+    }
+  },
+  "technology": {
+    "title": "Akıllı teknoloji tarafından destekleniyor.",
+    "subtitle": "Güvenlik, güvenilirlik ve sorunsuz deneyim için en son teknolojilerle oluşturulmuştur",
+    "feature1": {
+      "title": "API Tabanlı Kimlik Doğrulama",
+      "description": "Tüm kullanıcılar için güvenli kimlik doğrulama"
+    },
+    "feature2": {
+      "title": "Lokasyon Takibi",
+      "description": "İşler için gerçek zamanlı lokasyon eşleme"
+    },
+    "feature3": {
+      "title": "Anında Ödemeler",
+      "description": "Hızlı ve güvenli ödeme işleme"
+    },
+    "feature4": {
+      "title": "Akıllı Eşleşme",
+      "description": "AI destekli iş önerileri"
+    }
+  },
+  "testimonials": {
+    "title": "Binlerce tarafından güvenilir",
+    "subtitle": "10,000+ kişi Mesai'yi güveniyor",
+    "testimonial1": {
+      "name": "Ahmet Yılmaz",
+      "role": "Depo İşçisi",
+      "content": "Mesai, zamanlamalarımın uygun olduğu esnek iş bulmamı sağladı. 3 ayda ₺15,000 kazandım!"
+    },
+    "testimonial2": {
+      "name": "Zeynep Kaya",
+      "role": "HR Müdürü",
+      "content": "1 haftada 20 pozisyonu doldurdum. Platform çok kolay kullanılır ve işçiler güvenilirdir."
+    },
+    "testimonial3": {
+      "name": "Mehmet Demir",
+      "role": "Teslimat Şoförü",
+      "content": "Lokasyon tabanlı iş eşleşmesi mükemmel. Sadece yakınımdaki işleri görüyorum ve hemen çalışmaya başlayabilirim."
+    }
+  },
+  "cta": {
+    "title": "Hemen başlamaya hazır mısınız?",
+    "description": "Mesai'ye katılın ve bugün sonraki işinizi bulun. Zamanlamalarınızla uyumlu esnek fırsatlarla çalışın.",
+    "joinAsWorker": "İşçi Olarak Katılın",
+    "joinAsEmployer": "İşveren Olarak Katılın",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "footer": {
+    "description": "Lokasyon bazlı günlük iş platformu - İş arayanları ve işverenleri gerçek zamanlı buluşturur.",
+    "product": "Ürün",
+    "features": "Özellikler",
+    "pricing": "Fiyatlandırma",
+    "careers": "Kariyer",
+    "company": "Şirket",
+    "about": "Hakkımızda",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "cookies": "Çerez Politikası",
+    "faq": "SSS",
+    "rights": "Tüm hakları saklıdır."
+  }
+}

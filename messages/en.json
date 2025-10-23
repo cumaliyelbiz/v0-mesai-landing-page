@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "login": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "The job world simplified",
+    "title": "Find work near you.",
+    "titleHighlight": "Fast, flexible,",
+    "titleEnd": "on your terms.",
+    "description": "Mesai connects job seekers with employers in real-time — discover location-based jobs and start working immediately.",
+    "startNow": "Start Now",
+    "watchDemo": "Watch Demo",
+    "activeUsers": "10,000+ active users",
+    "joinCommunity": "Join the community"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get started in three simple steps and find your next opportunity",
+    "step1": {
+      "title": "Verify Your Identity",
+      "description": "Enter your phone number and start securely with quick verification."
+    },
+    "step2": {
+      "title": "Discover Jobs Nearby",
+      "description": "Explore location-based opportunities that match your skills and availability."
+    },
+    "step3": {
+      "title": "Apply and Start Earning",
+      "description": "Apply to jobs quickly and work with flexible schedules."
+    }
+  },
+  "forWorkers": {
+    "badge": "For Job Seekers",
+    "title": "Your next job is nearby.",
+    "description": "Find flexible job opportunities that match your schedule and location. Work on your own terms with verified employers.",
+    "feature1": {
+      "title": "Location-Based Jobs",
+      "description": "Find work near you with smart location matching"
+    },
+    "feature2": {
+      "title": "Flexible Schedules",
+      "description": "Choose hourly or daily jobs to fit your life"
+    },
+    "feature3": {
+      "title": "Verified Employers",
+      "description": "Work with trusted companies and secure payments"
+    },
+    "feature4": {
+      "title": "Track Your Earnings",
+      "description": "Monitor your job history and total earnings in real-time"
+    },
+    "cta": "Join as Worker",
+    "dashboard": {
+      "title": "Your Dashboard",
+      "totalEarnings": "Total Earnings",
+      "completedJobs": "Completed Jobs",
+      "recentJobs": "Recent Jobs",
+      "warehouseAssistant": "Warehouse Assistant",
+      "away": "away",
+      "perDay": "/day"
+    }
+  },
+  "forEmployers": {
+    "badge": "For Employers",
+    "title": "Hire fast. Manage easy.",
+    "description": "Post short-term jobs in minutes and connect with skilled workers in your area. Simplify your hiring process.",
+    "feature1": {
+      "title": "Instant Job Posting",
+      "description": "Create and publish job listings in minutes"
+    },
+    "feature2": {
+      "title": "Multiple HR Accounts",
+      "description": "Manage team members under your company profile"
+    },
+    "feature3": {
+      "title": "Track Hours and Payments",
+      "description": "Monitor work hours and manage payments seamlessly"
+    },
+    "feature4": {
+      "title": "Rate and Rehire",
+      "description": "Build your network of reliable workers with ratings"
+    },
+    "cta": "Join as Employer",
+    "dashboard": {
+      "title": "Employer Dashboard",
+      "activeJobPosts": "Active Job Posts",
+      "positionsFilled": "positions filled",
+      "recentApplications": "Recent Applications",
+      "candidate": "Candidate",
+      "rating": "rating",
+      "view": "View"
+    }
+  },
+  "technology": {
+    "title": "Powered by smart technology.",
+    "subtitle": "Built with the latest technologies for security, reliability, and seamless experience",
+    "feature1": {
+      "title": "API-Based Authentication",
+      "description": "Secure authentication for all users"
+    },
+    "feature2": {
+      "title": "Location Tracking",
+      "description": "Real-time location matching for jobs"
+    },
+    "feature3": {
+      "title": "Instant Payments",
+      "description": "Fast and secure payment processing"
+    },
+    "feature4": {
+      "title": "Smart Matching",
+      "description": "AI-powered job recommendations"
+    }
+  },
+  "testimonials": {
+    "title": "Trusted by thousands",
+    "subtitle": "10,000+ people trust Mesai",
+    "testimonial1": {
+      "name": "Ahmet Yılmaz",
+      "role": "Warehouse Worker",
+      "content": "Mesai helped me find flexible work that fits my schedule. I earned ₺15,000 in 3 months!"
+    },
+    "testimonial2": {
+      "name": "Zeynep Kaya",
+      "role": "HR Manager",
+      "content": "Filled 20 positions in 1 week. The platform is so easy to use and the workers are reliable."
+    },
+    "testimonial3": {
+      "name": "Mehmet Demir",
+      "role": "Delivery Driver",
+      "content": "The location-based job matching is perfect. I only see jobs near me and can start working immediately."
+    }
+  },
+  "cta": {
+    "title": "Ready to get started?",
+    "description": "Join Mesai and find your next job today. Work with flexible opportunities that match your schedule.",
+    "joinAsWorker": "Join as Worker",
+    "joinAsEmployer": "Join as Employer",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "footer": {
+    "description": "Location-based daily job platform - Connecting job seekers with employers in real-time.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "careers": "Careers",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "faq": "FAQ",
+    "rights": "All rights reserved."
+  }
+}

@@ -18,11 +18,23 @@ import {
   Building2,
 } from "lucide-react"
 import { useEffect, useState } from "react"
+import { useTranslations } from "next-intl"
+import type { Locale } from "@/i18n/config"
+
+function getLocaleFromCookie(): Locale {
+  if (typeof document === "undefined") return "tr"
+  const cookie = document.cookie.split("; ").find((row) => row.startsWith("NEXT_LOCALE="))
+  return (cookie?.split("=")[1] as Locale) || "tr"
+}
 
 export default function MesaiLanding() {
   const [scrollY, setScrollY] = useState(0)
+  const [locale, setLocale] = useState<Locale>("tr")
+
+  const t = useTranslations()
 
   useEffect(() => {
+    setLocale(getLocaleFromCookie())
     const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
@@ -31,7 +43,7 @@ export default function MesaiLanding() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <Navigation />
+      <Navigation locale={locale} />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">
@@ -50,16 +62,15 @@ export default function MesaiLanding() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full border border-neon/30 bg-neon/10 px-4 py-2 text-sm font-medium text-neon">
                 <Zap className="h-4 w-4" />
-                <span>İş dünyası basitleşti</span>
+                <span>{t("hero.badge")}</span>
               </div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-[1.1]">
-                Yakınınızda iş bulun. <span className="text-neon">Hızlı, esnek,</span> kendi şartlarınızda.
+                {t("hero.title")} <span className="text-neon">{t("hero.titleHighlight")}</span> {t("hero.titleEnd")}
               </h1>
 
               <p className="text-xl text-muted-foreground text-pretty leading-relaxed max-w-2xl">
-                Mesai, iş arayanları ve işverenleri gerçek zamanlı olarak buluşturur — lokasyon bazlı işleri keşfedin ve
-                hemen çalışmaya başlayın.
+                {t("hero.description")}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -67,11 +78,11 @@ export default function MesaiLanding() {
                   size="lg"
                   className="bg-neon text-background hover:bg-neon/90 text-base font-semibold h-12 px-8"
                 >
-                  Hemen Başla
+                  {t("hero.startNow")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-base font-semibold h-12 px-8 bg-transparent">
-                  Demo İzle
+                  {t("hero.watchDemo")}
                 </Button>
               </div>
 
@@ -82,8 +93,8 @@ export default function MesaiLanding() {
                   ))}
                 </div>
                 <div className="text-sm">
-                  <div className="font-semibold">10,000+ aktif kullanıcı</div>
-                  <div className="text-muted-foreground">Topluluğa katılın</div>
+                  <div className="font-semibold">{t("hero.activeUsers")}</div>
+                  <div className="text-muted-foreground">{t("hero.joinCommunity")}</div>
                 </div>
               </div>
             </div>
@@ -131,10 +142,8 @@ export default function MesaiLanding() {
       <section id="how-it-works" className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Nasıl Çalışır</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              Üç basit adımda başlayın ve sonraki fırsatınızı bulun
-            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("howItWorks.title")}</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("howItWorks.subtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -142,20 +151,20 @@ export default function MesaiLanding() {
               {
                 icon: Smartphone,
                 step: "01",
-                title: "Kimliğinizi Doğrulayın",
-                description: "Telefon numaranızı girin ve hızlı doğrulama ile güvenli başlayın.",
+                title: t("howItWorks.step1.title"),
+                description: t("howItWorks.step1.description"),
               },
               {
                 icon: MapPin,
                 step: "02",
-                title: "Yakınızda İşleri Keşfedin",
-                description: "Yetenekleriniz ve uygunluklarınızla eşleşen lokasyon tabanlı fırsatları keşfedin.",
+                title: t("howItWorks.step2.title"),
+                description: t("howItWorks.step2.description"),
               },
               {
                 icon: Zap,
                 step: "03",
-                title: "Başvurun ve Kazanmaya Başlayın",
-                description: "İşlere hızlı başvurun ve esnek zamanlamalarla çalışın.",
+                title: t("howItWorks.step3.title"),
+                description: t("howItWorks.step3.description"),
               },
             ].map((item, i) => (
               <Card
@@ -185,37 +194,34 @@ export default function MesaiLanding() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full border border-neon/30 bg-neon/10 px-4 py-2 text-sm font-medium text-neon">
                 <Users className="h-4 w-4" />
-                <span>İş Arayanlar için</span>
+                <span>{t("forWorkers.badge")}</span>
               </div>
 
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-balance">Sonraki işiniz yakında.</h2>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-balance">{t("forWorkers.title")}</h2>
 
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Zamanlamalarınız ve lokasyonunuzla uyumlu esnek iş fırsatlarını bulun. Doğrulanmış işverenlerle kendi
-                şartlarınızda çalışın.
-              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">{t("forWorkers.description")}</p>
 
               <div className="space-y-4">
                 {[
                   {
                     icon: MapPin,
-                    title: "Lokasyon Bazlı İşler",
-                    desc: "Akıllı lokasyon eşleştirme ile yakınızda iş bulun",
+                    title: t("forWorkers.feature1.title"),
+                    desc: t("forWorkers.feature1.description"),
                   },
                   {
                     icon: Clock,
-                    title: "Esnek Zamanlamalar",
-                    desc: "Saatlik veya günlük iş seçin ve hayatınıza uymak",
+                    title: t("forWorkers.feature2.title"),
+                    desc: t("forWorkers.feature2.description"),
                   },
                   {
                     icon: Shield,
-                    title: "Doğrulanmış İşverenler",
-                    desc: "Güvenilir şirketlerle çalışın ve güvenli ödemeler yapın",
+                    title: t("forWorkers.feature3.title"),
+                    desc: t("forWorkers.feature3.description"),
                   },
                   {
                     icon: TrendingUp,
-                    title: "Kazançlarınızı Takip Edin",
-                    desc: "İş geçmişi ve toplam kazançlarınızı gerçek zamanlı olarak izleyin",
+                    title: t("forWorkers.feature4.title"),
+                    desc: t("forWorkers.feature4.description"),
                   },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 items-start group">
@@ -231,7 +237,7 @@ export default function MesaiLanding() {
               </div>
 
               <Button size="lg" className="bg-neon text-background hover:bg-neon/90">
-                İşçi Olarak Katılın
+                {t("forWorkers.joinAsWorker")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -241,23 +247,23 @@ export default function MesaiLanding() {
               <Card className="relative p-8 border-border/50 bg-card/50 backdrop-blur-sm">
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold">Paneliniz</h3>
+                    <h3 className="text-lg font-semibold">{t("forWorkers.workerPanelTitle")}</h3>
                     <div className="h-8 w-8 rounded-full bg-neon/20" />
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="rounded-xl border border-border/50 bg-background/50 p-4">
-                      <div className="text-sm text-muted-foreground mb-1">Toplam Kazanç</div>
+                      <div className="text-sm text-muted-foreground mb-1">{t("forWorkers.totalEarnings")}</div>
                       <div className="text-2xl font-bold text-neon">₺12,450</div>
                     </div>
                     <div className="rounded-xl border border-border/50 bg-background/50 p-4">
-                      <div className="text-sm text-muted-foreground mb-1">Tamamlanan İşler</div>
+                      <div className="text-sm text-muted-foreground mb-1">{t("forWorkers.completedJobs")}</div>
                       <div className="text-2xl font-bold">47</div>
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <div className="text-sm font-semibold">Son İşler</div>
+                    <div className="text-sm font-semibold">{t("forWorkers.recentJobs")}</div>
                     {[1, 2, 3].map((i) => (
                       <div
                         key={i}
@@ -266,8 +272,8 @@ export default function MesaiLanding() {
                         <div className="flex items-center gap-3">
                           <div className="h-10 w-10 rounded-lg bg-muted" />
                           <div>
-                            <div className="text-sm font-medium">Depo Asistanı</div>
-                            <div className="text-xs text-muted-foreground">2.3 km uzaklıktaki</div>
+                            <div className="text-sm font-medium">{t("forWorkers.jobTitle")}</div>
+                            <div className="text-xs text-muted-foreground">{t("forWorkers.distance")}</div>
                           </div>
                         </div>
                         <div className="text-sm font-semibold text-neon">₺350/gün</div>
@@ -290,23 +296,23 @@ export default function MesaiLanding() {
               <Card className="relative p-8 border-border/50 bg-card/50 backdrop-blur-sm">
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold">İşveren Paneli</h3>
+                    <h3 className="text-lg font-semibold">{t("forEmployers.employerPanelTitle")}</h3>
                     <Building2 className="h-6 w-6 text-neon" />
                   </div>
 
                   <div className="rounded-xl border border-border/50 bg-background/50 p-4 space-y-3">
                     <div className="flex items-center justify-between">
-                      <div className="text-sm text-muted-foreground">Aktif İş Gönderileri</div>
+                      <div className="text-sm text-muted-foreground">{t("forEmployers.activeJobPosts")}</div>
                       <div className="text-2xl font-bold">12</div>
                     </div>
                     <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
                       <div className="h-full w-3/4 bg-neon rounded-full" />
                     </div>
-                    <div className="text-xs text-muted-foreground">75% pozisyonlar dolduruldu</div>
+                    <div className="text-xs text-muted-foreground">{t("forEmployers.jobPostsFilled")}</div>
                   </div>
 
                   <div className="space-y-3">
-                    <div className="text-sm font-semibold">Son Başvurular</div>
+                    <div className="text-sm font-semibold">{t("forEmployers.recentApplications")}</div>
                     {[1, 2, 3].map((i) => (
                       <div
                         key={i}
@@ -315,15 +321,15 @@ export default function MesaiLanding() {
                         <div className="flex items-center gap-3">
                           <div className="h-10 w-10 rounded-full bg-muted" />
                           <div>
-                            <div className="text-sm font-medium">Aday #{i}</div>
+                            <div className="text-sm font-medium">{t("forEmployers.applicantTitle")}</div>
                             <div className="flex items-center gap-1 text-xs text-muted-foreground">
                               <Star className="h-3 w-3 fill-neon text-neon" />
-                              <span>4.8 puan</span>
+                              <span>{t("forEmployers.applicantRating")}</span>
                             </div>
                           </div>
                         </div>
                         <Button size="sm" variant="outline" className="text-xs bg-transparent">
-                          Görüntüle
+                          {t("forEmployers.view")}
                         </Button>
                       </div>
                     ))}
@@ -335,35 +341,30 @@ export default function MesaiLanding() {
             <div className="order-1 lg:order-2 space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full border border-accent-green/30 bg-accent-green/10 px-4 py-2 text-sm font-medium text-accent-green">
                 <Building2 className="h-4 w-4" />
-                <span>İşverenler için</span>
+                <span>{t("forEmployers.badge")}</span>
               </div>
 
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-balance">
-                Hızlı olarak iş alın. Kolay yönetin.
-              </h2>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-balance">{t("forEmployers.title")}</h2>
 
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Kısa vadeli işleri dakikalar içinde yayınlayın ve bölgenizdeki yetenekli işçilerle bağlantı kurun. İş
-                alma sürecinizi basitleştirin.
-              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">{t("forEmployers.description")}</p>
 
               <div className="space-y-4">
                 {[
-                  { icon: Zap, title: "Anında İş Gönderimi", desc: "İş ilanları oluşturun ve yayınlayın" },
+                  { icon: Zap, title: t("forEmployers.feature1.title"), desc: t("forEmployers.feature1.description") },
                   {
                     icon: Users,
-                    title: "Çoklu HR Hesapları",
-                    desc: "Tüm şirket profiliniz altında takım üyelerini yönetin",
+                    title: t("forEmployers.feature2.title"),
+                    desc: t("forEmployers.feature2.description"),
                   },
                   {
                     icon: Clock,
-                    title: "Çalışma Saatlerini ve Ödemeleri Takip Edin",
-                    desc: "Çalışma saatlerini izleyin ve ödemeleri sorunsuz yönetin",
+                    title: t("forEmployers.feature3.title"),
+                    desc: t("forEmployers.feature3.description"),
                   },
                   {
                     icon: Star,
-                    title: "Puanlayın ve Tekrar İşleyin",
-                    desc: "Güvenilir işçi ağınıza puanlarla katılmak",
+                    title: t("forEmployers.feature4.title"),
+                    desc: t("forEmployers.feature4.description"),
                   },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 items-start group">
@@ -379,7 +380,7 @@ export default function MesaiLanding() {
               </div>
 
               <Button size="lg" className="bg-accent-green text-background hover:bg-accent-green/90">
-                İşveren Olarak Katılın
+                {t("forEmployers.joinAsEmployer")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -391,11 +392,9 @@ export default function MesaiLanding() {
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-              Akıllı teknoloji tarafından destekleniyor.
-            </h2>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("technologySection.title")}</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              Güvenlik, güvenilirlik ve sorunsuz deneyim için en son teknolojilerle oluşturulmuştur
+              {t("technologySection.description")}
             </p>
           </div>
 
@@ -403,12 +402,24 @@ export default function MesaiLanding() {
             {[
               {
                 icon: Shield,
-                title: "API Tabanlı Kimlik Doğrulama",
-                desc: "Tüm kullanıcılar için güvenli kimlik doğrulama",
+                title: t("technologySection.feature1.title"),
+                desc: t("technologySection.feature1.description"),
               },
-              { icon: MapPin, title: "Lokasyon Takibi", desc: "İşler için gerçek zamanlı lokasyon eşleme" },
-              { icon: Zap, title: "Anında Ödemeler", desc: "Hızlı ve güvenli ödeme işleme" },
-              { icon: CheckCircle2, title: "Akıllı Eşleşme", desc: "AI destekli iş önerileri" },
+              {
+                icon: MapPin,
+                title: t("technologySection.feature2.title"),
+                desc: t("technologySection.feature2.description"),
+              },
+              {
+                icon: Zap,
+                title: t("technologySection.feature3.title"),
+                desc: t("technologySection.feature3.description"),
+              },
+              {
+                icon: CheckCircle2,
+                title: t("technologySection.feature4.title"),
+                desc: t("technologySection.feature4.description"),
+              },
             ].map((tech, i) => (
               <Card
                 key={i}
@@ -431,29 +442,28 @@ export default function MesaiLanding() {
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Binlerce tarafından güvenilir</h2>
-            <p className="text-xl text-muted-foreground">10,000+ kişi Mesai'yi güveniyor</p>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("testimonials.title")}</h2>
+            <p className="text-xl text-muted-foreground">{t("testimonials.subtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                name: "Ahmet Yılmaz",
-                role: "Depo İşçisi",
-                content: "Mesai, zamanlamalarımın uygun olduğu esnek iş bulmamı sağladı. 3 ayda ₺15,000 kazandım!",
+                name: t("testimonials.worker1.name"),
+                role: t("testimonials.worker1.role"),
+                content: t("testimonials.worker1.content"),
                 rating: 5,
               },
               {
-                name: "Zeynep Kaya",
-                role: "HR Müdürü",
-                content: "1 haftada 20 pozisyonu doldurdum. Platform çok kolay kullanılır ve işçiler güvenilirdir.",
+                name: t("testimonials.employer1.name"),
+                role: t("testimonials.employer1.role"),
+                content: t("testimonials.employer1.content"),
                 rating: 5,
               },
               {
-                name: "Mehmet Demir",
-                role: "Teslimat Şoförü",
-                content:
-                  "Lokasyon tabanlı iş eşleşmesi mükemmel. Sadece yakınımdaki işleri görüyorum ve hemen çalışmaya başlayabilirim.",
+                name: t("testimonials.worker2.name"),
+                role: t("testimonials.worker2.role"),
+                content: t("testimonials.worker2.content"),
                 rating: 5,
               },
             ].map((testimonial, i) => (
@@ -488,11 +498,9 @@ export default function MesaiLanding() {
             <div className="absolute bottom-0 left-0 h-64 w-64 bg-accent-green/20 blur-3xl rounded-full" />
 
             <div className="relative p-12 sm:p-16 text-center space-y-8">
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-balance">
-                Hemen başlamaya hazır mısınız?
-              </h2>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-balance">{t("ctaSection.title")}</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-                Mesai'ye katılın ve bugün sonraki işinizi bulun. Zamanlamalarınızla uyumlu esnek fırsatlarla çalışın.
+                {t("ctaSection.description")}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -500,20 +508,20 @@ export default function MesaiLanding() {
                   size="lg"
                   className="bg-neon text-background hover:bg-neon/90 text-base font-semibold h-12 px-8"
                 >
-                  İşçi Olarak Katılın
+                  {t("ctaSection.joinAsWorker")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-base font-semibold h-12 px-8 bg-transparent">
-                  İşveren Olarak Katılın
+                  {t("ctaSection.joinAsEmployer")}
                 </Button>
               </div>
 
               <div className="flex items-center justify-center gap-4 pt-8">
                 <div className="h-12 w-32 rounded-lg border border-border/50 bg-background/50 flex items-center justify-center">
-                  <span className="text-xs font-semibold">App Store</span>
+                  <span className="text-xs font-semibold">{t("ctaSection.appStore")}</span>
                 </div>
                 <div className="h-12 w-32 rounded-lg border border-border/50 bg-background/50 flex items-center justify-center">
-                  <span className="text-xs font-semibold">Google Play</span>
+                  <span className="text-xs font-semibold">{t("ctaSection.googlePlay")}</span>
                 </div>
               </div>
             </div>

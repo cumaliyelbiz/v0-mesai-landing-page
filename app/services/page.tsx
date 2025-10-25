@@ -19,13 +19,26 @@ import {
   ArrowRight,
 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useEffect, useState } from "react"
+import { Locale } from "@/i18n/config"
+
+function getLocaleFromCookie(): Locale {
+  if (typeof document === "undefined") return "tr"
+  const cookie = document.cookie.split("; ").find((row) => row.startsWith("NEXT_LOCALE="))
+  return (cookie?.split("=")[1] as Locale) || "tr"
+}
 
 export default function ServicesPage() {
   const t = useTranslations("services")
+  const [locale, setLocale] = useState<Locale>("tr")
+
+  useEffect(() => {
+    setLocale(getLocaleFromCookie())
+  }, [])
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
+      <Navigation locale={locale} />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">
@@ -132,65 +145,6 @@ export default function ServicesPage() {
               {t("forEmployers.cta")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section id="pricing" className="py-20 sm:py-32 border-t border-border/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("pricing.title")}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("pricing.subtitle")}</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {["worker", "standard", "premium"].map((plan, i) => (
-              <Card
-                key={i}
-                className={`p-8 border-border/50 bg-card/50 backdrop-blur-sm ${
-                  plan === "standard" ? "ring-2 ring-neon scale-105" : ""
-                }`}
-              >
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-2">{t(`pricing.${plan}.name`)}</h3>
-                    <p className="text-sm text-muted-foreground">{t(`pricing.${plan}.description`)}</p>
-                  </div>
-
-                  <div className="text-4xl font-bold">
-                    {t(`pricing.${plan}.price`)}
-                    {t(`pricing.${plan}.price`) !== t("pricing.worker.price") && (
-                      <span className="text-lg text-muted-foreground">/ay</span>
-                    )}
-                  </div>
-
-                  <ul className="space-y-3">
-                    {[1, 2, 3, 4, 5, ...(plan === "premium" ? [6] : [])].map((num) => {
-                      const featureKey = `pricing.${plan}.feature${num}`
-                      return (
-                        <li key={num} className="flex items-start gap-3">
-                          <CheckCircle2 className="h-5 w-5 text-neon shrink-0 mt-0.5" />
-                          <span className="text-sm text-muted-foreground">{t(featureKey)}</span>
-                        </li>
-                      )
-                    })}
-                  </ul>
-
-                  <Button
-                    size="lg"
-                    className={`w-full ${
-                      plan === "standard"
-                        ? "bg-neon text-background hover:bg-neon/90"
-                        : "bg-transparent hover:bg-accent"
-                    }`}
-                    variant={plan === "standard" ? "default" : "outline"}
-                  >
-                    {t(`pricing.${plan}.cta`)}
-                  </Button>
-                </div>
-              </Card>
-            ))}
           </div>
         </div>
       </section>

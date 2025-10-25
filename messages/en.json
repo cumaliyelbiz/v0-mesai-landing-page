@@ -316,6 +316,7 @@
     "badge": "Contact",
     "title": "We'd love to",
     "titleHighlight": "hear from you",
+    "titleEnd": "",
     "description": "Reach out to us with your questions, suggestions, or collaboration proposals",
     "form": {
       "title": "Send Us a Message",
@@ -366,6 +367,7 @@
     "badge": "Frequently Asked Questions",
     "title": "Let us",
     "titleHighlight": "help you",
+    "titleEnd": "",
     "description": "Everything you want to know about Mesai",
     "questions": {
       "q1": {

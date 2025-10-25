@@ -7,11 +7,27 @@ import { Textarea } from "@/components/ui/textarea"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Locale } from "@/i18n/config"
+import { useTranslations } from "next-intl"
+
+function getLocaleFromCookie(): Locale {
+  if (typeof document === "undefined") return "tr"
+  const cookie = document.cookie.split("; ").find((row) => row.startsWith("NEXT_LOCALE="))
+  return (cookie?.split("=")[1] as Locale) || "tr"
+}
 
 export default function ContactPage() {
+  const t = useTranslations("contact")
+  const [locale, setLocale] = useState<Locale>("tr")
+
+  useEffect(() => {
+    setLocale(getLocaleFromCookie())
+  }, [])
+
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
+      <Navigation locale={locale} />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">
@@ -22,15 +38,15 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-neon/30 bg-neon/10 px-4 py-2 text-sm font-medium text-neon">
               <Mail className="h-4 w-4" />
-              <span>İletişim</span>
+              <span>{t("badge")}</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-[1.1]">
-              Sizden <span className="text-neon">haber almak</span> isteriz
+              {t("title")} <span className="text-neon">{t("titleHighlight")}</span> {t("titleEnd")}
             </h1>
 
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed max-w-3xl mx-auto">
-              Sorularınız, önerileriniz veya işbirliği teklifleriniz için bize ulaşın
+              {t("description")}
             </p>
           </div>
         </div>
@@ -44,54 +60,54 @@ export default function ContactPage() {
             <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
               <form className="space-y-6">
                 <div>
-                  <h2 className="text-2xl font-bold mb-6">Bize Mesaj Gönderin</h2>
+                  <h2 className="text-2xl font-bold mb-6">{t("form.title")}</h2>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="firstName" className="text-sm font-medium">
-                      Ad
+                      {t("form.firstName")}
                     </label>
-                    <Input id="firstName" placeholder="Adınız" />
+                    <Input id="firstName" placeholder={t("form.firstNamePlaceholder")} />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="lastName" className="text-sm font-medium">
-                      Soyad
+                      {t("form.lastName")}
                     </label>
-                    <Input id="lastName" placeholder="Soyadınız" />
+                    <Input id="lastName" placeholder={t("form.lastNamePlaceholder")} />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    E-posta
+                    {t("form.email")}
                   </label>
-                  <Input id="email" type="email" placeholder="ornek@email.com" />
+                  <Input id="email" type="email" placeholder={t("form.emailPlaceholder")} />
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="phone" className="text-sm font-medium">
-                    Telefon
+                    {t("form.phone")}
                   </label>
-                  <Input id="phone" type="tel" placeholder="+90 (5XX) XXX XX XX" />
+                  <Input id="phone" type="tel" placeholder={t("form.phonePlaceholder")} />
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm font-medium">
-                    Konu
+                    {t("form.subject")}
                   </label>
-                  <Input id="subject" placeholder="Mesajınızın konusu" />
+                  <Input id="subject" placeholder={t("form.subjectPlaceholder")} />
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
-                    Mesaj
+                    {t("form.message")}
                   </label>
-                  <Textarea id="message" placeholder="Mesajınızı buraya yazın..." rows={6} />
+                  <Textarea id="message" placeholder={t("form.messagePlaceholder")} rows={6} />
                 </div>
 
                 <Button size="lg" className="w-full bg-neon text-background hover:bg-neon/90">
-                  Gönder
+                  {t("form.submit")}
                   <Send className="ml-2 h-5 w-5" />
                 </Button>
               </form>
@@ -100,10 +116,9 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold mb-6">İletişim Bilgileri</h2>
+                <h2 className="text-2xl font-bold mb-6">{t("info.title")}</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Mesai ekibi olarak size yardımcı olmaktan mutluluk duyarız. Aşağıdaki kanallardan bize
-                  ulaşabilirsiniz.
+                 {t("info.description")}
                 </p>
               </div>
 
@@ -114,9 +129,9 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6 text-neon" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">E-posta</h3>
-                      <p className="text-sm text-muted-foreground">destek@mesai.com</p>
-                      <p className="text-sm text-muted-foreground">info@mesai.com</p>
+                      <h3 className="font-semibold mb-1">{t("info.email.title")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("info.email.support")}</p>
+                      <p className="text-sm text-muted-foreground">{t("info.email.info")}</p>
                     </div>
                   </div>
                 </Card>
@@ -127,9 +142,9 @@ export default function ContactPage() {
                       <Phone className="h-6 w-6 text-accent-green" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Telefon</h3>
-                      <p className="text-sm text-muted-foreground">+90 (212) 123 45 67</p>
-                      <p className="text-sm text-muted-foreground">Hafta içi 09:00 - 18:00</p>
+                      <h3 className="font-semibold mb-1">{t("info.phone.title")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("info.phone.number")}</p>
+                      <p className="text-sm text-muted-foreground">{t("info.phone.hours")}</p>
                     </div>
                   </div>
                 </Card>
@@ -140,11 +155,11 @@ export default function ContactPage() {
                       <MapPin className="h-6 w-6 text-neon" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Adres</h3>
+                      <h3 className="font-semibold mb-1">{t("info.address.title")}</h3>
                       <p className="text-sm text-muted-foreground">
-                        Maslak Mahallesi, Büyükdere Caddesi
+                        {t("info.address.line1")}
                         <br />
-                        No: 123, Sarıyer / İstanbul
+                        {t("info.address.line2")}
                       </p>
                     </div>
                   </div>
@@ -152,19 +167,19 @@ export default function ContactPage() {
               </div>
 
               <Card className="p-6 border-border/50 bg-card/50 backdrop-blur-sm">
-                <h3 className="font-semibold mb-4">Çalışma Saatleri</h3>
+                <h3 className="font-semibold mb-4">{t("info.workingHours.title")}</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Pazartesi - Cuma</span>
-                    <span className="font-medium">09:00 - 18:00</span>
+                    <span className="text-muted-foreground">{t("info.workingHours.weekdays")}</span>
+                    <span className="font-medium">{t("info.workingHours.weekdaysHours")}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Cumartesi</span>
-                    <span className="font-medium">10:00 - 16:00</span>
+                    <span className="text-muted-foreground">{t("info.workingHours.saturday")}</span>
+                    <span className="font-medium">{t("info.workingHours.saturdayHours")}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Pazar</span>
-                    <span className="font-medium">Kapalı</span>
+                    <span className="text-muted-foreground">{t("info.workingHours.sunday")}</span>
+                    <span className="font-medium">{t("info.workingHours.sundayHours")}</span>
                   </div>
                 </div>
               </Card>

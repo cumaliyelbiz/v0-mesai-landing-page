@@ -5,79 +5,94 @@ import { Footer } from "@/components/footer"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Briefcase, MapPin, Clock, ArrowRight, Heart, Zap, Users, TrendingUp } from "lucide-react"
+import { Locale } from "@/i18n/config"
+import { useTranslations } from "next-intl"
+import { useEffect, useState } from "react"
+
+function getLocaleFromCookie(): Locale {
+  if (typeof document === "undefined") return "tr"
+  const cookie = document.cookie.split("; ").find((row) => row.startsWith("NEXT_LOCALE="))
+  return (cookie?.split("=")[1] as Locale) || "tr"
+}
 
 export default function CareersPage() {
+  const t = useTranslations("careers")
+  const [locale, setLocale] = useState<Locale>("tr")
+
+  useEffect(() => {
+    setLocale(getLocaleFromCookie())
+  }, [])
   const openPositions = [
     {
-      title: "Senior Full Stack Developer",
-      department: "Mühendislik",
-      location: "İstanbul (Hibrit)",
-      type: "Tam Zamanlı",
-      description: "React, Node.js ve cloud teknolojileri konusunda deneyimli geliştiriciler arıyoruz.",
+      title: t("positions.position1.title"),
+      department: t("positions.position1.department"),
+      location: t("positions.position1.location"),
+      type: t("positions.position1.type"),
+      description: t("positions.position1.description"),
     },
     {
-      title: "Product Manager",
-      department: "Ürün",
-      location: "İstanbul",
-      type: "Tam Zamanlı",
-      description: "Kullanıcı deneyimini iyileştirmek ve ürün stratejisi geliştirmek için lider arıyoruz.",
+      title: t("positions.position2.title"),
+      department: t("positions.position2.department"),
+      location: t("positions.position2.location"),
+      type: t("positions.position2.type"),
+      description: t("positions.position2.description"),
     },
     {
-      title: "UI/UX Designer",
-      department: "Tasarım",
-      location: "Uzaktan",
-      type: "Tam Zamanlı",
-      description: "Kullanıcı odaklı, yaratıcı ve detaycı tasarımcılar arıyoruz.",
+      title: t("positions.position3.title"),
+      department: t("positions.position3.department"),
+      location: t("positions.position3.location"),
+      type: t("positions.position3.type"),
+      description: t("positions.position3.description"),
     },
     {
-      title: "Business Development Manager",
-      department: "Satış",
-      location: "İstanbul",
-      type: "Tam Zamanlı",
-      description: "İşveren tarafında büyümeyi hızlandıracak deneyimli satış profesyonelleri arıyoruz.",
+      title: t("positions.position4.title"),
+      department: t("positions.position4.department"),
+      location: t("positions.position4.location"),
+      type: t("positions.position4.type"),
+      description: t("positions.position4.description"),
     },
     {
-      title: "Customer Success Specialist",
-      department: "Müşteri Hizmetleri",
-      location: "İstanbul (Hibrit)",
-      type: "Tam Zamanlı",
-      description: "Kullanıcılarımıza en iyi deneyimi sunmak için müşteri odaklı ekip üyeleri arıyoruz.",
+      title: t("positions.position5.title"),
+      department: t("positions.position5.department"),
+      location: t("positions.position5.location"),
+      type: t("positions.position5.type"),
+      description: t("positions.position5.description"),
     },
     {
-      title: "Marketing Manager",
-      department: "Pazarlama",
-      location: "İstanbul",
-      type: "Tam Zamanlı",
-      description: "Dijital pazarlama stratejileri geliştirecek ve uygulayacak deneyimli pazarlamacılar arıyoruz.",
+      title: t("positions.position6.title"),
+      department: t("positions.position6.department"),
+      location: t("positions.position6.location"),
+      type: t("positions.position6.type"),
+      description: t("positions.position6.description"),
     },
   ]
 
   const benefits = [
     {
       icon: Heart,
-      title: "Sağlık Sigortası",
-      description: "Kapsamlı özel sağlık sigortası",
+      title: t("benefits.benefit1.title"),
+      description: t("benefits.benefit1.description"),
     },
     {
       icon: Zap,
-      title: "Esnek Çalışma",
-      description: "Hibrit ve uzaktan çalışma seçenekleri",
+      title: t("benefits.benefit2.title"),
+      description: t("benefits.benefit2.description"),
     },
     {
       icon: Users,
-      title: "Takım Etkinlikleri",
-      description: "Düzenli takım aktiviteleri ve sosyal etkinlikler",
+      title: t("benefits.benefit3.title"),
+      description: t("benefits.benefit3.description"),
     },
     {
       icon: TrendingUp,
-      title: "Kariyer Gelişimi",
-      description: "Eğitim ve gelişim fırsatları",
+      title: t("benefits.benefit4.title"),
+      description: t("benefits.benefit4.description"),
     },
   ]
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
+      <Navigation locale={locale} />
 
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
@@ -87,16 +102,15 @@ export default function CareersPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-accent-green/30 bg-accent-green/10 px-4 py-2 text-sm font-medium text-accent-green">
               <Briefcase className="h-4 w-4" />
-              <span>Kariyer Fırsatları</span>
+              <span>{t("badge")}</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-[1.1]">
-              Mesai ailesine <span className="text-neon">katılın</span>
+              {t("title")} <span className="text-neon">{t("titleHighlight")}</span>
             </h1>
 
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed max-w-3xl mx-auto">
-              İş dünyasını değiştiren bir ekibin parçası olun. Yetenekli, tutkulu ve yenilikçi insanlarla birlikte
-              çalışın.
+              {t("description")}
             </p>
           </div>
         </div>
@@ -105,9 +119,9 @@ export default function CareersPage() {
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Neden Mesai?</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("benefits.title")}</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              Çalışanlarımıza sunduğumuz avantajlar
+              {t("benefits.subtitle")}
             </p>
           </div>
 
@@ -133,9 +147,9 @@ export default function CareersPage() {
       <section className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Açık Pozisyonlar</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("positions.title")}</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-              Size uygun pozisyonu bulun ve başvurun
+              {t("positions.subtitle")}
             </p>
           </div>
 
@@ -171,7 +185,7 @@ export default function CareersPage() {
                   </div>
 
                   <Button className="bg-neon text-background hover:bg-neon/90 shrink-0">
-                    Başvur
+                    {t("positions.apply")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
@@ -181,11 +195,11 @@ export default function CareersPage() {
 
           <div className="max-w-4xl mx-auto mt-12 text-center">
             <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">Aradığınız pozisyonu bulamadınız mı?</h3>
+              <h3 className="text-2xl font-bold mb-4">{t("cta.title")}</h3>
               <p className="text-muted-foreground mb-6">
-                Yine de sizinle tanışmak isteriz! Özgeçmişinizi ve motivasyon mektubunuzu bize gönderin.
+                {t("cta.description")}
               </p>
-              <Button className="bg-neon text-background hover:bg-neon/90">kariyer@mesai.com</Button>
+              <Button onClick={() => window.location.href = "mailto:" + t("cta.button")} className="bg-neon text-background hover:bg-neon/90">{t("cta.button")}</Button>
             </Card>
           </div>
         </div>

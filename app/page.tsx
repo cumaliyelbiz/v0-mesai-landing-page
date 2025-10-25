@@ -28,16 +28,12 @@ function getLocaleFromCookie(): Locale {
 }
 
 export default function MesaiLanding() {
-  const [scrollY, setScrollY] = useState(0)
   const [locale, setLocale] = useState<Locale>("tr")
 
   const t = useTranslations()
 
   useEffect(() => {
     setLocale(getLocaleFromCookie())
-    const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
@@ -50,11 +46,9 @@ export default function MesaiLanding() {
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
         <div
           className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-neon/20 blur-[128px]"
-          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
         />
         <div
           className="absolute bottom-1/4 -right-48 h-96 w-96 rounded-full bg-accent-green/20 blur-[128px]"
-          style={{ transform: `translateY(${scrollY * -0.2}px)` }}
         />
 
         <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
@@ -490,7 +484,7 @@ export default function MesaiLanding() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 sm:py-32 border-t border-border/50">
+      <section id="cta" className="py-20 sm:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="relative overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
             <div className="absolute inset-0 bg-gradient-to-br from-neon/10 to-accent-green/10" />

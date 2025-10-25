@@ -6,13 +6,28 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Target, Heart, Lightbulb, Users, TrendingUp, Award, ArrowRight } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useEffect, useState } from "react"
+import { Locale } from "@/i18n/config"
+import { useRouter } from "next/navigation"
+
+function getLocaleFromCookie(): Locale {
+  if (typeof document === "undefined") return "tr"
+  const cookie = document.cookie.split("; ").find((row) => row.startsWith("NEXT_LOCALE="))
+  return (cookie?.split("=")[1] as Locale) || "tr"
+}
 
 export default function AboutPage() {
   const t = useTranslations("about")
+  const [locale, setLocale] = useState<Locale>("tr")
+  const router = useRouter();
+
+  useEffect(() => {
+    setLocale(getLocaleFromCookie())
+  }, [])
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
+      <Navigation locale={locale} />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">
@@ -138,7 +153,7 @@ export default function AboutPage() {
                   {t("cta.startNow")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="text-base font-semibold h-12 px-8 bg-transparent">
+                <Button onClick={() => router.push("/contact")} size="lg" variant="outline" className="text-base font-semibold h-12 px-8 bg-transparent">
                   {t("cta.contact")}
                 </Button>
               </div>

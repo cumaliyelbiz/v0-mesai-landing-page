@@ -6,29 +6,15 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HowItWorks } from "@/components/how-it-works"
 import { MapPin, Clock, Shield, Zap, Users, TrendingUp, Star, ArrowRight, Building2, CheckCircle2 } from "lucide-react"
-import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
-import type { Locale } from "@/i18n/config"
-
-function getLocaleFromCookie(): Locale {
-  if (typeof document === "undefined") return "tr"
-  const cookie = document.cookie.split("; ").find((row) => row.startsWith("NEXT_LOCALE="))
-  return (cookie?.split("=")[1] as Locale) || "tr"
-}
 
 export default function MesaiLanding() {
-  const [locale, setLocale] = useState<Locale>("tr")
-
   const t = useTranslations()
-
-  useEffect(() => {
-    setLocale(getLocaleFromCookie())
-  }, [])
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <Navigation locale={locale} />
+      <Navigation />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">

@@ -1,19 +1,18 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Zap, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { ThemeToggle } from "./theme-toggle"
 import { LanguageSwitcher } from "./language-switcher"
 import { useTranslations } from "next-intl"
-import type { Locale } from "@/i18n/config"
 import { useRouter } from "next/navigation"
 
-export function Navigation({ locale }: { locale: Locale }) {
+export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const t = useTranslations("navigation")
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-xl">
@@ -42,7 +41,7 @@ export function Navigation({ locale }: { locale: Locale }) {
             >
               {t("contact")}
             </Link>
-            <LanguageSwitcher currentLocale={locale} />
+            <LanguageSwitcher />
             <ThemeToggle />
             <Button onClick={() => router.push("/#cta")} size="sm" className="bg-neon text-background hover:bg-neon/90">
               {t("getStarted")}
@@ -50,7 +49,7 @@ export function Navigation({ locale }: { locale: Locale }) {
           </div>
 
           <div className="flex md:hidden items-center gap-2">
-            <LanguageSwitcher currentLocale={locale} />
+            <LanguageSwitcher />
             <ThemeToggle />
             <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

@@ -4,19 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import {
-  MapPin,
-  Clock,
-  Shield,
-  Zap,
-  Users,
-  TrendingUp,
-  CheckCircle2,
-  Star,
-  ArrowRight,
-  Smartphone,
-  Building2,
-} from "lucide-react"
+import { HowItWorks } from "@/components/how-it-works"
+import { MapPin, Clock, Shield, Zap, Users, TrendingUp, Star, ArrowRight, Building2, CheckCircle2 } from "lucide-react"
 import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 import type { Locale } from "@/i18n/config"
@@ -44,12 +33,8 @@ export default function MesaiLanding() {
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
-        <div
-          className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-neon/20 blur-[128px]"
-        />
-        <div
-          className="absolute bottom-1/4 -right-48 h-96 w-96 rounded-full bg-accent-green/20 blur-[128px]"
-        />
+        <div className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-neon/20 blur-[128px]" />
+        <div className="absolute bottom-1/4 -right-48 h-96 w-96 rounded-full bg-accent-green/20 blur-[128px]" />
 
         <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -132,54 +117,7 @@ export default function MesaiLanding() {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section id="how-it-works" className="py-20 sm:py-32 border-t border-border/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("howItWorks.title")}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("howItWorks.subtitle")}</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                icon: Smartphone,
-                step: "01",
-                title: t("howItWorks.step1.title"),
-                description: t("howItWorks.step1.description"),
-              },
-              {
-                icon: MapPin,
-                step: "02",
-                title: t("howItWorks.step2.title"),
-                description: t("howItWorks.step2.description"),
-              },
-              {
-                icon: Zap,
-                step: "03",
-                title: t("howItWorks.step3.title"),
-                description: t("howItWorks.step3.description"),
-              },
-            ].map((item, i) => (
-              <Card
-                key={i}
-                className="relative p-8 border-border/50 bg-card/50 backdrop-blur-sm hover:border-neon/50 transition-all duration-300 group"
-              >
-                <div className="absolute top-8 right-8 text-6xl font-bold text-foreground/5 group-hover:text-neon/10 transition-colors">
-                  {item.step}
-                </div>
-                <div className="relative space-y-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-neon/10 ring-1 ring-neon/20 group-hover:bg-neon/20 transition-colors">
-                    <item.icon className="h-7 w-7 text-neon" />
-                  </div>
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HowItWorks />
 
       {/* For Job Seekers */}
       <section id="for-workers" className="py-20 sm:py-32 border-t border-border/50">

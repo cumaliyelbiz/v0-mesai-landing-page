@@ -19,18 +19,22 @@
   },
   "howItWorks": {
     "title": "How It Works",
-    "subtitle": "Get started in three simple steps and find your next opportunity",
+    "subtitle": "Achieve your dream job in 4 simple steps",
     "step1": {
-      "title": "Verify Your Identity",
-      "description": "Enter your phone number and start securely with quick verification."
+      "title": "Sign Up",
+      "description": "Join the platform as a job seeker or employer. Create your profile and set your preferences."
     },
     "step2": {
-      "title": "Discover Jobs Nearby",
-      "description": "Explore location-based opportunities that match your skills and availability."
+      "title": "Explore Listings",
+      "description": "Find job listings that suit you based on location, category, and salary filters. View them on the map."
     },
     "step3": {
-      "title": "Apply and Start Earning",
-      "description": "Apply to jobs quickly and work with flexible schedules."
+      "title": "Apply and Connect",
+      "description": "Submit your application with one click. Message employers, ask questions, and schedule interviews."
+    },
+    "step4": {
+      "title": "Start Working",
+      "description": "Application approved? Congratulations! Learn the details of starting work after receiving employer approval."
     }
   },
   "forWorkers": {

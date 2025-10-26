@@ -19,18 +19,22 @@
   },
   "howItWorks": {
     "title": "Nasıl Çalışır",
-    "subtitle": "Üç basit adımda başlayın ve sonraki fırsatınızı bulun",
+    "subtitle": "4 basit adımda hayalinizdeki işe kavuşun",
     "step1": {
-      "title": "Kimliğinizi Doğrulayın",
-      "description": "Telefon numaranızı girin ve hızlı doğrulama ile güvenli başlayın."
+      "title": "Kayıt Ol",
+      "description": "İş arayan veya işveren olarak platforma üye ol. Profilini oluştur ve tercihlerini belirle."
     },
     "step2": {
-      "title": "Yakınızda İşleri Keşfedin",
-      "description": "Yetenekleriniz ve uygunluklarınızla eşleşen lokasyon tabanlı fırsatları keşfedin."
+      "title": "İlanları Keşfet",
+      "description": "Konum, kategori ve maaş filtrelerine göre sana uygun iş ilanlarını bul. Harita üzerinde görüntüle."
     },
     "step3": {
-      "title": "Başvurun ve Kazanmaya Başlayın",
-      "description": "İşlere hızlı başvurun ve esnek zamanlamalarla çalışın."
+      "title": "Başvur ve İletişim Kur",
+      "description": "Tek tıkla başvurunu yap. İşverenlerle mesajlaş, sorularını sor ve görüşme ayarla."
+    },
+    "step4": {
+      "title": "İşe Başla",
+      "description": "Başvurun onaylandı mı? Tebrikler! İşverenden onay aldıktan sonra işe başlama detaylarını öğren."
     }
   },
   "forWorkers": {

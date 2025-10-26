@@ -14,7 +14,7 @@ function getLocaleFromCookie(): Locale {
   return (cookie?.split("=")[1] as Locale) || "tr"
 }
 
-export default function FAQPage({ params }: { params: { locale: Locale } }) {
+export default function FAQPageClient({ params }: { params: { locale: Locale } }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
   const t = useTranslations("faq")
   const [locale, setLocale] = useState<Locale>(params.locale)

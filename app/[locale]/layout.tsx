@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   generator: "v0.app",
 }
 
+export async function generateStaticParams() {
+  return [{ locale: "tr" }, { locale: "en" }]
+}
+
 export default async function RootLayout({
   children,
   params,

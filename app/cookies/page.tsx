@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Cookie } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
-import type { Locale } from "@/i18n/config"
+import { Locale } from "@/i18n/config"
 
 function getLocaleFromCookie(): Locale {
   if (typeof document === "undefined") return "tr"
@@ -13,7 +13,7 @@ function getLocaleFromCookie(): Locale {
   return (cookie?.split("=")[1] as Locale) || "tr"
 }
 
-export default function CookiesClientPage() {
+export default function CookiesPage() {
   const t = useTranslations("cookies")
   const [locale, setLocale] = useState<Locale>("tr")
 
@@ -43,7 +43,9 @@ export default function CookiesClientPage() {
             <div className="prose prose-invert max-w-none space-y-8 text-foreground">
               <section className="space-y-4">
                 <h2 className="text-3xl font-bold">{t("section1.title")}</h2>
-                <p className="text-muted-foreground leading-relaxed">{t("section1.content")}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("section1.content")}
+                </p>
               </section>
 
               <section className="space-y-4">
@@ -53,22 +55,30 @@ export default function CookiesClientPage() {
                 <div className="space-y-4 ml-4">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{t("section2.essential.title")}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{t("section2.essential.description")}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t("section2.essential.description")}
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{t("section2.performance.title")}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{t("section2.performance.description")}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t("section2.performance.description")}
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{t("section2.functionality.title")}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{t("section2.functionality.description")}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t("section2.functionality.description")}
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{t("section2.targeting.title")}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{t("section2.targeting.description")}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t("section2.targeting.description")}
+                    </p>
                   </div>
                 </div>
               </section>
@@ -117,7 +127,9 @@ export default function CookiesClientPage() {
 
               <section className="space-y-4">
                 <h2 className="text-3xl font-bold">{t("section4.title")}</h2>
-                <p className="text-muted-foreground leading-relaxed">{t("section4.intro")}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("section4.intro")}
+                </p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
                   <li>{t("section4.chrome")}</li>
                   <li>{t("section4.firefox")}</li>
@@ -128,17 +140,23 @@ export default function CookiesClientPage() {
 
               <section className="space-y-4">
                 <h2 className="text-3xl font-bold">{t("section5.title")}</h2>
-                <p className="text-muted-foreground leading-relaxed">{t("section5.content")}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("section5.content")}
+                </p>
               </section>
 
               <section className="space-y-4">
                 <h2 className="text-3xl font-bold">{t("section6.title")}</h2>
-                <p className="text-muted-foreground leading-relaxed">{t("section6.content")}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("section6.content")}
+                </p>
               </section>
 
               <section className="space-y-4">
                 <h2 className="text-3xl font-bold">{t("section7.title")}</h2>
-                <p className="text-muted-foreground leading-relaxed">{t("section7.intro")}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("section7.intro")}
+                </p>
                 <p className="text-muted-foreground">
                   E-posta: {t("section7.email")}
                   <br />

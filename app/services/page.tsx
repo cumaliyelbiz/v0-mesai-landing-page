@@ -20,7 +20,7 @@ import {
 } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
-import type { Locale } from "@/i18n/config"
+import { Locale } from "@/i18n/config"
 
 function getLocaleFromCookie(): Locale {
   if (typeof document === "undefined") return "tr"
@@ -28,7 +28,7 @@ function getLocaleFromCookie(): Locale {
   return (cookie?.split("=")[1] as Locale) || "tr"
 }
 
-export default function ServicesClientPage() {
+export default function ServicesPage() {
   const t = useTranslations("services")
   const [locale, setLocale] = useState<Locale>("tr")
 

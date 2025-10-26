@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Card } from "@/components/ui/card"
 import { HelpCircle, ChevronDown } from "lucide-react"
 import { useEffect, useState } from "react"
-import type { Locale } from "@/i18n/config"
+import { Locale } from "@/i18n/config"
 import { useTranslations } from "next-intl"
 
 function getLocaleFromCookie(): Locale {
@@ -14,55 +14,55 @@ function getLocaleFromCookie(): Locale {
   return (cookie?.split("=")[1] as Locale) || "tr"
 }
 
-export default function FAQPage({ params }: { params: { locale: Locale } }) {
+export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
   const t = useTranslations("faq")
-  const [locale, setLocale] = useState<Locale>(params.locale)
+  const [locale, setLocale] = useState<Locale>("tr")
 
   useEffect(() => {
     setLocale(getLocaleFromCookie())
-  }, [params.locale])
+  }, [])
 
   const faqs = [
     {
       question: t("questions.q1.question"),
-      answer: t("questions.q1.answer"),
+      answer: t("questions.q1.answer")
     },
     {
       question: t("questions.q2.question"),
-      answer: t("questions.q2.answer"),
+      answer: t("questions.q2.answer")
     },
     {
       question: t("questions.q3.question"),
-      answer: t("questions.q3.answer"),
+      answer: t("questions.q3.answer")
     },
     {
       question: t("questions.q4.question"),
-      answer: t("questions.q4.answer"),
+      answer: t("questions.q4.answer")
     },
     {
       question: t("questions.q5.question"),
-      answer: t("questions.q5.answer"),
+      answer: t("questions.q5.answer")
     },
     {
       question: t("questions.q6.question"),
-      answer: t("questions.q6.answer"),
+      answer: t("questions.q6.answer")
     },
     {
       question: t("questions.q7.question"),
-      answer: t("questions.q7.answer"),
+      answer: t("questions.q7.answer")
     },
     {
       question: t("questions.q8.question"),
-      answer: t("questions.q8.answer"),
+      answer: t("questions.q8.answer")
     },
     {
       question: t("questions.q9.question"),
-      answer: t("questions.q9.answer"),
+      answer: t("questions.q9.answer")
     },
     {
       question: t("questions.q10.question"),
-      answer: t("questions.q10.answer"),
+      answer: t("questions.q10.answer")
     },
   ]
 
@@ -102,15 +102,13 @@ export default function FAQPage({ params }: { params: { locale: Locale } }) {
                 >
                   <h3 className="text-lg font-semibold">{faq.question}</h3>
                   <ChevronDown
-                    className={`h-5 w-5 text-neon shrink-0 transition-transform duration-300 ${
-                      openIndex === index ? "rotate-180" : ""
-                    }`}
+                    className={`h-5 w-5 text-neon shrink-0 transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? "max-h-96" : "max-h-0"
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-96" : "max-h-0"
+                    }`}
                 >
                   <div className="px-6 pb-6 text-muted-foreground leading-relaxed">{faq.answer}</div>
                 </div>
@@ -121,7 +119,9 @@ export default function FAQPage({ params }: { params: { locale: Locale } }) {
           <div className="max-w-3xl mx-auto mt-16 text-center">
             <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
               <h3 className="text-2xl font-bold mb-4">{t("cta.title")}</h3>
-              <p className="text-muted-foreground mb-6">{t("cta.description")}</p>
+              <p className="text-muted-foreground mb-6">
+                {t("cta.description")}
+              </p>
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-neon text-background hover:bg-neon/90 h-12 px-8 font-semibold transition-colors"

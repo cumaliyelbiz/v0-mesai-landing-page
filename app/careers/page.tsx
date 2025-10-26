@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Briefcase, MapPin, Clock, ArrowRight, Heart, Zap, Users, TrendingUp } from "lucide-react"
-import type { Locale } from "@/i18n/config"
+import { Locale } from "@/i18n/config"
 import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
 
@@ -15,7 +15,7 @@ function getLocaleFromCookie(): Locale {
   return (cookie?.split("=")[1] as Locale) || "tr"
 }
 
-export function CareersClientPage() {
+export default function CareersPage() {
   const t = useTranslations("careers")
   const [locale, setLocale] = useState<Locale>("tr")
 
@@ -120,7 +120,9 @@ export function CareersClientPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("benefits.title")}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("benefits.subtitle")}</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
+              {t("benefits.subtitle")}
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -146,7 +148,9 @@ export function CareersClientPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">{t("positions.title")}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">{t("positions.subtitle")}</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
+              {t("positions.subtitle")}
+            </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
@@ -192,13 +196,10 @@ export function CareersClientPage() {
           <div className="max-w-4xl mx-auto mt-12 text-center">
             <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
               <h3 className="text-2xl font-bold mb-4">{t("cta.title")}</h3>
-              <p className="text-muted-foreground mb-6">{t("cta.description")}</p>
-              <Button
-                onClick={() => (window.location.href = "mailto:" + t("cta.button"))}
-                className="bg-neon text-background hover:bg-neon/90"
-              >
-                {t("cta.button")}
-              </Button>
+              <p className="text-muted-foreground mb-6">
+                {t("cta.description")}
+              </p>
+              <Button onClick={() => window.location.href = "mailto:" + t("cta.button")} className="bg-neon text-background hover:bg-neon/90">{t("cta.button")}</Button>
             </Card>
           </div>
         </div>

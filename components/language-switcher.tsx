@@ -5,19 +5,24 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Languages, Check } from "lucide-react"
 import { locales, localeNames, type Locale } from "@/i18n/config"
 import { useRouter, usePathname } from "next/navigation"
-import { useLocale } from "next-intl"
+import { useState, useEffect } from "react"
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
   const router = useRouter()
   const pathname = usePathname()
-  const currentLocale = useLocale() as Locale
+  const [activeLocale, setActiveLocale] = useState<Locale>(currentLocale)
+
+  useEffect(() => {
+    setActiveLocale(currentLocale)
+  }, [currentLocale])
 
   const handleLocaleChange = (locale: Locale) => {
-    // Remove current locale from pathname and add new locale
-    const pathWithoutLocale = pathname.replace(`/${currentLocale}`, "")
-    const newPath = `/${locale}${pathWithoutLocale}`
+    setActiveLocale(locale)
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`
 
+    const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`)
     router.push(newPath)
+    router.refresh()
   }
 
   return (
@@ -33,11 +38,11 @@ export function LanguageSwitcher() {
           <DropdownMenuItem
             key={locale}
             onClick={() => handleLocaleChange(locale)}
-            className={currentLocale === locale ? "bg-accent" : ""}
+            className={activeLocale === locale ? "bg-accent" : ""}
           >
             <div className="flex items-center justify-between w-full gap-2">
               <span>{localeNames[locale]}</span>
-              {currentLocale === locale && <Check className="h-4 w-4 text-neon" />}
+              {activeLocale === locale && <Check className="h-4 w-4 text-neon" />}
             </div>
           </DropdownMenuItem>
         ))}

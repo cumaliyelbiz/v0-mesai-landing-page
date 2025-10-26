@@ -8,7 +8,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 import { useEffect, useState } from "react"
-import type { Locale } from "@/i18n/config"
+import { Locale } from "@/i18n/config"
 import { useTranslations } from "next-intl"
 
 function getLocaleFromCookie(): Locale {
@@ -17,7 +17,7 @@ function getLocaleFromCookie(): Locale {
   return (cookie?.split("=")[1] as Locale) || "tr"
 }
 
-export function ContactPageClient() {
+export default function ContactPage() {
   const t = useTranslations("contact")
   const [locale, setLocale] = useState<Locale>("tr")
 
@@ -117,7 +117,9 @@ export function ContactPageClient() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-6">{t("info.title")}</h2>
-                <p className="text-muted-foreground leading-relaxed">{t("info.description")}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                 {t("info.description")}
+                </p>
               </div>
 
               <div className="space-y-6">

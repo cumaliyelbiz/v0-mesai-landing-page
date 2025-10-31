@@ -342,18 +342,18 @@
       "description": "Mesai ekibi olarak size yardımcı olmaktan mutluluk duyarız. Aşağıdaki kanallardan bize ulaşabilirsiniz.",
       "email": {
         "title": "E-posta",
-        "support": "destek@mesai.com",
-        "info": "info@mesai.com"
+        "support": "mesaiwork@gmail.com",
+        "info": "mesaiwork@gmail.com"
       },
       "phone": {
         "title": "Telefon",
-        "number": "+90 (212) 123 45 67",
+        "number": "+90 544 766 59 16",
         "hours": "Hafta içi 09:00 - 18:00"
       },
       "address": {
         "title": "Adres",
-        "line1": "Maslak Mahallesi, Büyükdere Caddesi",
-        "line2": "No: 123, Sarıyer / İstanbul"
+        "line1": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430",
+        "line2": "34349 Beşiktaş/İstanbul"
       },
       "workingHours": {
         "title": "Çalışma Saatleri",
@@ -557,8 +557,8 @@
     "section9": {
       "title": "9. İletişim",
       "intro": "Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:",
-      "email": "E-posta: privacy@mesai.com",
-      "address": "Adres: Mesai Technologies, İstanbul, Türkiye"
+      "email": "mesaiwork@gmail.com",
+      "address": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430 34349 Beşiktaş/İstanbul"
     }
   },
   "terms": {
@@ -620,8 +620,8 @@
     "section11": {
       "title": "11. İletişim",
       "intro": "Kullanım şartları hakkında sorularınız için:",
-      "email": "E-posta: legal@mesai.com",
-      "address": "Adres: Mesai Technologies, İstanbul, Türkiye"
+      "email": "mesaiwork@gmail.com",
+      "address": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430 34349 Beşiktaş/İstanbul"
     }
   },
   "cookies": {
@@ -704,8 +704,8 @@
     "section7": {
       "title": "7. İletişim",
       "intro": "Çerez politikamız hakkında sorularınız için:",
-      "email": "E-posta: privacy@mesai.com",
-      "address": "Adres: Mesai Technologies, İstanbul, Türkiye"
+      "email": "mesaiwork@gmail.com",
+      "address": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430 34349 Beşiktaş/İstanbul"
     }
   }
 }

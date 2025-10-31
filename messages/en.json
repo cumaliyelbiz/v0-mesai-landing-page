@@ -343,18 +343,18 @@
       "description": "The Mesai team is happy to help you. You can reach us through the following channels.",
       "email": {
         "title": "Email",
-        "support": "support@mesai.com",
-        "info": "info@mesai.com"
+        "support": "mesaiwork@gmail.com",
+        "info": "mesaiwork@gmail.com"
       },
       "phone": {
         "title": "Phone",
-        "number": "+90 (212) 123 45 67",
+        "number": "+90 544 766 59 16",
         "hours": "Weekdays 09:00 - 18:00"
       },
       "address": {
         "title": "Address",
-        "line1": "Maslak District, Büyükdere Avenue",
-        "line2": "No: 123, Sarıyer / Istanbul"
+        "line1": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430",
+        "line2": "34349 Beşiktaş/İstanbul"
       },
       "workingHours": {
         "title": "Working Hours",
@@ -558,8 +558,8 @@
     "section9": {
       "title": "9. Contact",
       "intro": "For questions about our privacy policy, you can contact us:",
-      "email": "Email: privacy@mesai.com",
-      "address": "Address: Mesai Technologies, Istanbul, Turkey"
+      "email": "mesaiwork@gmail.com",
+      "address": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430 34349 Beşiktaş/İstanbul"
     }
   },
   "terms": {
@@ -621,8 +621,8 @@
     "section11": {
       "title": "11. Contact",
       "intro": "For questions about the terms of service:",
-      "email": "Email: legal@mesai.com",
-      "address": "Address: Mesai Technologies, Istanbul, Turkey"
+      "email": "mesaiwork@gmail.com",
+      "address": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430 34349 Beşiktaş/İstanbul"
     }
   },
   "cookies": {
@@ -705,8 +705,8 @@
     "section7": {
       "title": "7. Contact",
       "intro": "For questions about our cookie policy:",
-      "email": "Email: privacy@mesai.com",
-      "address": "Address: Mesai Technologies, Istanbul, Turkey"
+      "email": "mesaiwork@gmail.com",
+      "address": "Fulya, Yeşilçimen Sokağı Polat Tower Residence Bağımsız Bölüm 12/430 34349 Beşiktaş/İstanbul"
     }
   }
 }

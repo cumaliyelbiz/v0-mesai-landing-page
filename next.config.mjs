@@ -13,9 +13,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: "export",
-  reactStrictMode: true,
-  trailingSlash: true,
+  //output: "export",
+  //reactStrictMode: true,
+  //trailingSlash: true,
 }
 
 export default withNextIntl(nextConfig)

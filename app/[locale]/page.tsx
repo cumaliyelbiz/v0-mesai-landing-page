@@ -38,7 +38,18 @@ export default function MesaiLanding() {
                 {t("hero.description")}
               </p>
 
-
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  className="bg-neon text-background hover:bg-neon/90 text-base font-semibold h-12 px-8"
+                >
+                  {t("hero.startNow")}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+                <Button size="lg" variant="outline" className="text-base font-semibold h-12 px-8 bg-transparent">
+                  {t("hero.watchDemo")}
+                </Button>
+              </div>
 
               <div className="flex items-center gap-8 pt-4">
                 <div className="flex -space-x-3">

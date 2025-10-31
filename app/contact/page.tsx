@@ -131,7 +131,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold mb-1">{t("info.email.title")}</h3>
                       <p className="text-sm text-muted-foreground">{t("info.email.support")}</p>
-                      {/*<p className="text-sm text-muted-foreground">{t("info.email.info")}</p>*/}
+                      {/*<p className="text-sm text-muted-foreground">{t("info.email.info")}</p> x*/}
                     </div>
                   </div>
                 </Card>

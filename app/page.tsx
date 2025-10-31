@@ -52,7 +52,7 @@ export default function MesaiLanding() {
                 {t("hero.description")}
               </p>
 
-
+              
 
               <div className="flex items-center gap-8 pt-4">
                 <div className="flex -space-x-3">
